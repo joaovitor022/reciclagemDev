@@ -1,4 +1,6 @@
-Funcionalidades do Projeto de PI
+# Projeto PI - Projeto PI
+
+### Funcionalidades do Projeto de PI
 
 Funcionalidade 1 = Armazenamento de dados para confirmação de acesso (loguin).
 
@@ -10,4 +12,5 @@ Funcionalidade 4 = Exibição dos dados de interesse referentes a proposta do pr
 
 Funcionalidade 5 = Possibilidade de exclusão (excluir ou deletar) dos dados armazenados.
 
-
+Wireframe inicial do projeto:
+![Imagem Wireframe Cadastro](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Cadastro.png)
