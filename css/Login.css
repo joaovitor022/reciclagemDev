@@ -1,0 +1,36 @@
+.login{
+    margin: 5vh 0;
+    background: rgb(90, 91, 92);
+    border-radius: 20px;
+    max-width: 550px;
+    padding: 15px 40px;
+    box-shadow: 3px 3px 3px #ffffffaf;
+}
+
+
+.user{
+    position: relative;
+    width: 100%;
+    padding: 10px 0;    
+    border-bottom: 1px solid #fff;
+    font-size: 16px;
+    margin-bottom: 60px;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuariocads{
+    width: 100%;
+    padding: 10px 0;
+
+}
+
+a, .lo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
