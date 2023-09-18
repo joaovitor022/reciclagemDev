@@ -10,59 +10,28 @@
         <title>Login-Reciclagem</title>
     </head>
     <body>
+        <header>
+            <a href="../pages/index.html
+            ">Logo Reciclagem</a>
+        </header>
         <main>
-            <div class="principal">
-                <nav>
-                    <ul>
-                        <li><a href="/pages/index.html">Reciclagem</a></li>
-                        <li><a href="/pages/index.html">Home</a></li>
-                        <li><a href="/pages/Cadastroempresa.html">Empresa</a></li>
-                        <li><a href="/pages/Login.html">Login</a></li>
-                        <li><img src="" alt="pesquisa"></li>
-                    </ul>
-                </nav>
-            </div>
-        </main>
-            <div>
-                <div class="login">
-                    <h1 class="lo">Login</h1>
-
-                        <div class="user">
-                            <input type="text" id="usuario" required>
-                            <label for="usuario" class="usia">Usuário</label>
-                        </div>
-
-                            <div class="user">
-                                <input type="password" id="senha" required>
-                                <label for="senha">Senha</label>
-                            </div>
-
-                                <div class="op">
-                                <a class="senha" href="">Esqueceu a senha</a>
-
-                                <p class="cads">
-                                    Não tem cadastro?
-                                </p>
-
-                                <h1 class="usuariocads">
-                                     <a class="a" href="/pages/Cadastrousuario.html">Usuário<a> 
-                                </h1>
-
-                                <p>
-                                    Ou
-                                </p>
-
-                                <h1 class="empresacads">
-                                    <a class="a" href="/pages/Cadastroempresa.html">Empresa<a>  
-                                </h1>
-                            </div>
-
-                             <div class="condicao">
-                        <p>
-                            Bem-vindo ao nosso site. Ao usá-lo, você concorda com nossos <a href="url_para_os_termos_e_condicoes">termos e condições</a>.</p>
-                        </p>
-                    </div>
+            <div class="caixa-login">
+                <h2>Login</h2>
+                <form action="" method="post">
+                    <label for="usuario">Usuário:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+            
+                    <label for="senha">Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+            
+                    <button type="submit">Entrar</button>
+                </form>
+    
+                <div class="registro">
+                    <p>Não possui login?</p>
+                    <a href=""><button type="button">Registrar-se</button></a>
                 </div>
             </div>
+        </main>
     </body>
 </html>
