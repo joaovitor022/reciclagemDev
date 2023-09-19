@@ -1,36 +1,89 @@
-.login{
-    margin: 5vh 0;
-    background: rgb(90, 91, 92);
-    border-radius: 20px;
-    max-width: 550px;
-    padding: 15px 40px;
-    box-shadow: 3px 3px 3px #ffffffaf;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 
-.user{
-    position: relative;
-    width: 100%;
-    padding: 10px 0;    
-    border-bottom: 1px solid #fff;
-    font-size: 16px;
-    margin-bottom: 60px;
-    top: 0;
-    left: 0;
-    padding: 10px 0;
+
+header{
+    background-color: #0db0b8;
+    height: 10vh;
+}
+
+.caixa-login{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-color: #e4f2f4;
+    border-radius: 20px;
+    margin: 15vw;
+    padding: 2vw;
+    align-items: center;
+    box-shadow: 20px 20px #e8e8e8;
+}
+
+.caixa-login h2{
+    color: #0db0b8;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.caixa-login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-login form label{
+    color: #1e686c;
+    left: 0;
+}
+
+.caixa-login form input{
+    padding: 2vh;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1e686c;
+    width: 50vw;
+}
+
+.caixa-login form input:focus{
+    outline-color: rgb(190, 190, 190);
+}
+
+.caixa-login form button{
+    border: 1px solid #29787b;
+    border-radius: 20px;
+    background-color: #2f9194;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 2rem;
+    width: 20vw;
+    cursor: pointer;
+    display: block;
+    align-self: center;
+}
+
+.registro{
+    display: flex;
     align-items: center;
 }
 
-.usuariocads{
-    width: 100%;
-    padding: 10px 0;
-
+.registro p{
+    color: #737373;
+    font-weight: bold;
 }
 
-a, .lo{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.registro button{
+    border: 1px solid #127e92;
+    border-radius: 20px;
+    background-color: #0cc0df;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 2rem;
+    cursor: pointer;
 }
