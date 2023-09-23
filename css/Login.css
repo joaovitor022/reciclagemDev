@@ -4,12 +4,20 @@
     padding: 0;
 }
 
-
-
 header{
     background-color: #0db0b8;
     height: 10vh;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2vw;
 }
+
+.image img {
+    margin-top: -0vh ; 
+    transform: translateY(-20px);
+    height: 50px;   
+  }  
 
 .caixa-login{
     display: flex;
