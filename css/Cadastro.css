@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.empresa{
+    display: none;
+}
+
+header{
+    background-color: #0db0b8;
+    height: 10vh;
+    text-align: center; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 2vw;
+}
+
+.image img {
+    margin-top: -0vh ; 
+    transform: translateY(-20px);
+    height: 50px;   
+}  
+
+.cadastro{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.btns{
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.btns button{
+    padding: 1rem;
+    border: none;
+    background-color: #0db0b8;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.usuario{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4f2f4;
+    border-radius: 20px;
+    padding: 2vw;
+    align-items: center;
+    box-shadow: 20px 20px #e8e8e8;
+}
+
+.usuario h2{
+    color: #0db0b8;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.usuario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario form label{
+    color: #1e686c;
+    left: 0;
+}
+
+.usuario form input{
+    padding: 2vh;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1e686c;
+    width: 50vw;
+}
+
+.usuario form input:focus{
+    outline-color: rgb(190, 190, 190);
+}
+
+.usuario form button{
+    border: 1px solid #29787b;
+    border-radius: 20px;
+    background-color: #2f9194;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 2rem;
+    width: 20vw;
+    cursor: pointer;
+    display: block;
+    align-self: center;
+}
+/*
+.empresa{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4f2f4;
+    border-radius: 20px;
+    padding: 2vw;
+    align-items: center;
+    box-shadow: 20px 20px #e8e8e8;
+}
+
+.empresa h2{
+    color: #0db0b8;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.empresa form{
+    display: flex;
+    flex-direction: column;
+}
+
+.empresa form label{
+    color: #1e686c;
+    left: 0;
+}
+
+.empresa form input{
+    padding: 2vh;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1e686c;
+    width: 50vw;
+}
+
+.empresa form input:focus{
+    outline-color: rgb(190, 190, 190);
+}
+
+.empresa form button{
+    border: 1px solid #29787b;
+    border-radius: 20px;
+    background-color: #2f9194;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 2rem;
+    width: 20vw;
+    cursor: pointer;
+    display: block;
+    align-self: center;
+}
+*/
