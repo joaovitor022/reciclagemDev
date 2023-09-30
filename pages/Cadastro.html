@@ -14,14 +14,14 @@
                     <a href="/pages/index.html"> <img src="/img/icone-logo1.png" alt="Ícone"> </a>
                 </div>
             </header>
-                    <main>
-                        <section class="cadastro">
-                            <div class="btns">
-                                <button onclick="mostrarUsuario()">Usuário</button>
-                                <button onclick="mostrarEmpresa()">Empresa</button>
-                            </div>
+                <main>
+                    <section class="cadastro">
+                         <div class="btns">
+                            <button onclick="mostrarUsuario()">Usuário</button>
+                            <button onclick="mostrarEmpresa()">Empresa</button>
+                        </div>
                             <div class="usuario">
-                                <h2>Cadastro</h2>
+                                   <h2>Cadastro</h2>
                                 <form action="" method="post">
                                     <input type="text" placeholder="Seu nome completo" required>
                                     <input type="Email" placeholder="Email" required>
@@ -29,32 +29,22 @@
                                     <input type="password" placeholder="Senha" required>
                                     <input type="password" placeholder="Confirmar Senha" required>
                                 </form>
-                            </div>
-
-                            <div class="empresa">
-                                <h2>Cadastro</h2>
-                                <form action="" method="post">
-                                    <input type="Empresa" placeholder="Empresa" required>
-                                    <input type="Email" placeholder="Email" required>
-                                    <input type="Cnpj" placeholder="Cnpj" required>
-                                    <input type="Cep" placeholder="Cep" required>
-                                    <input type="Id Empresa" placeholder="Id empresa" required>
-                                    <input type="Id funcionario " placeholder="Id funcionario" required>
-                                    <input type="password" placeholder="Senha" required>
-                                    <input type="password" placeholder="Confirmar Senha" required>
-                                </form>
-                            </div>
-                        </section>
-            <script>
-                function mostrarEmpresa(){
-                    document.querySelector('.usuario').style.display = 'none';
-                    document.querySelector('.empresa').style.display = 'block';
-                }
-
-                function mostrarUsuario(){
-                    document.querySelector('.empresa').style.display = 'none';
-                    document.querySelector('.usuario').style.display = 'block';
-                }
-            </script>
+                            </div>   <br>
+                                <div class="empresa">
+                                    <h2>Cadastro</h2>
+                                    <form action="" method="post">
+                                        <input type="Empresa" placeholder="Empresa" required>
+                                        <input type="Email" placeholder="Email" required>
+                                        <input type="Cnpj" placeholder="Cnpj" required>
+                                        <input type="Cep" placeholder="Cep" required>
+                                        <input type="Id Empresa" placeholder="Id empresa" required>
+                                        <input type="Id funcionario " placeholder="Id funcionario" required>
+                                        <input type="password" placeholder="Senha" required>
+                                        <input type="password" placeholder="Confirmar Senha" required>
+                                    </form>
+                                </div>
+                    </section>   
+                </main>
+            <script src="/js/front.js"></script>
         </body>
 </html>
