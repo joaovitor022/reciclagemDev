@@ -1,3 +1,4 @@
+
 function mostrarEmpresa(){
     document.querySelector('.usuario').style.display = 'none';
     document.querySelector('.empresa').style.display = 'block';
