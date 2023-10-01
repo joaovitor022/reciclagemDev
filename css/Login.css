@@ -93,3 +93,11 @@ header img{
     margin: 2rem;
     cursor: pointer;
 }
+
+button{
+    transition: transform 0.2s;
+}
+
+button:active{
+    transform: scale(1.2);
+}
