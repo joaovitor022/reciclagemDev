@@ -39,6 +39,8 @@ header{
     padding: 1rem;
     border: none;
     background-color: #0db0b8;
+    color: #ffffff;
+    font-weight: bold;
     border-radius: 10px;
     cursor: pointer;
 }

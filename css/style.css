@@ -12,6 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     border-bottom: 5px solid rgb(15, 167, 15);
+    margin-bottom: 10vh;
 }
 
 header img{
@@ -77,14 +78,38 @@ header ul a li{
     color: #38b6ff;
 }
 
+main{
+    flex-grow: 1;
+}
+
+.paragrafos{
+    margin: 5vw;
+}
+
+.paragrafo{
+    display: flex;
+    align-items: center;
+}
+
+.paragrafo img{
+    width: 20rem;
+}
+
+.texto{
+    background-color: #f1f1f1;
+    border-radius: 2rem;
+    padding: 2rem;
+}
+
 footer{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     border-top: 5px solid rgb(15, 167, 15);
     background-color: #f1f1f1;
-    position: fixed;
-    bottom: 0;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-between;
 }
 
 footer ul{
