@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+    line-height: 160%;
+}
+
+body{
+    position: relative;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10vh;
+}
+
+header img{
+    width: 8rem;
+}
+
+header ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+header ul a:hover {
+    transform: scale(1.2);
+}
+
+header ul a li{
+    margin: 2rem;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+}
+
+.buttons button{
+    margin: 1rem;
+    padding: 0.7rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+    border-radius: 20rem;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.login{
+    background-color: #ffffff;
+    color: #38b6ff;
+}
+
+.cadastro{
+    background-color: #38b6ff;
+    color: #ffffff;
+}
+
+footer{
+    width: 100%;
+    border-top: 5px solid rgb(15, 167, 15);
+    background-color: #f1f1f1;
+}
+
+.listas{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul{
+    margin: 2rem;
+    list-style: none;
+}
+
+footer ul a{
+    text-decoration: none;
+    color: black;
+}
+
+footer ul a li{
+    margin-left: 1rem;
+}
+
+.copyright{
+    width: 100%;
+    background-color: #d3d3d3;
+    border-top: 2px black solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    transition: transform 0.2s;
+}
+
+button:active{
+    transform: scale(1.2);
+}
+
+@media(max-width: 950px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}
