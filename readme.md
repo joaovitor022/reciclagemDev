@@ -14,19 +14,25 @@ Funcionalidade 5 = Possibilidade de exclusão (excluir ou deletar) dos dados arm
 
 ### Design prévio do projeto:
 Tela de cadastro do usuário comum
-![Imagem Wireframe Cadastro](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Cadastro.png)
+
+![Imagem design cadastro](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Cadastro.png)
 
 Tela de cadastro do usuário empresa
-![Imagem Wireframe Cadastro de empresa](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Cadastro_Empresa.png)
+
+![Imagem design cadastro de empresa](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Cadastro_Empresa.png)
 
 Tela de login
-![Imagem Wireframe Login](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Login.png)
+
+![Imagem design login](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Login.png)
 
 Página principal
-![Imagem Wireframe Tela inicial](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Tela_Inicial.png)
+
+![Imagem design tela inicial](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Tela_Inicial.png)
 
 Página pessoal do usuário comum
-![Imagem Wireframe Descarte de material do usuário](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Pagina_Usuario.png)
+
+![Imagem design página pessoal do usuário comum](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Pagina_Usuario.png)
 
 Página pessoal do usuário empresa
-![Imagem Wireframe Descarte de material do usuário](https://github.com/joaovitor022/Projeto-reciclagem-/blob/main/Imagens/README/Pagina_Empresa.png)
+
+![Imagem design página pessoal do usuário empresa](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Pagina_Empresa.png)
