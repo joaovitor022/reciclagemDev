@@ -1,28 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.empresa{
-    display: none;
-}
-
-header{
-    background-color: #0db0b8;
-    height: 10vh;
-    text-align: center; 
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 2vw;
-}
-
-.image img {
-    margin-top: -0vh ; 
-    transform: translateY(-20px);
-    height: 50px;   
-}  
-
 .cadastro{
     display: flex;
     flex-direction: column;
@@ -31,7 +6,7 @@ header{
 }
 
 .btns{
-    margin-bottom: 0;
+    margin-bottom: 2rem;
     padding: 0;
 }
 
@@ -45,7 +20,13 @@ header{
     cursor: pointer;
 }
 
-.usuario{
+.btns .btn-usuario{
+    background-color: #ffffff;
+    color: #0db0b8;
+    border: 2px solid #0db0b8;
+}
+
+.usuario, .empresa{
     display: flex;
     flex-direction: column;
     background-color: #e4f2f4;
@@ -53,25 +34,28 @@ header{
     padding: 2vw;
     align-items: center;
     box-shadow: 20px 20px #e8e8e8;
+    margin-bottom: 10vh;
 }
 
-.usuario h2{
+.usuario h2, .empresa h2{
     color: #0db0b8;
     font-size: 2rem;
     margin-bottom: 3vh;
 }
 
-.usuario form{
+.usuario form, .empresa form{
     display: flex;
     flex-direction: column;
 }
 
-.usuario form label{
+.usuario form label, .empresa form label{
     color: #1e686c;
     left: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
 }
 
-.usuario form input{
+.usuario form input, .empresa form input{
     padding: 2vh;
     border: none;
     border-radius: 20px;
@@ -80,11 +64,11 @@ header{
     width: 50vw;
 }
 
-.usuario form input:focus{
+.usuario form input:focus, .empresas form input:focus{
     outline-color: rgb(190, 190, 190);
 }
 
-.usuario form button{
+.usuario form button, .empresa form button{
     border: 1px solid #29787b;
     border-radius: 20px;
     background-color: #2f9194;
@@ -100,56 +84,5 @@ header{
 }
 
 .empresa{
-    display: flex;
-    flex-direction: column;
-    background-color: #e4f2f4;
-    border-radius: 20px;
-    padding: 2vw;
-    align-items: center;
-    box-shadow: 20px 20px #e8e8e8;
+    display: none;
 }
-
-.empresa h2{
-    color: #0db0b8;
-    font-size: 2rem;
-    margin-bottom: 3vh;
-}
-
-.empresa form{
-    display: flex;
-    flex-direction: column;
-}
-
-.empresa form label{
-    color: #1e686c;
-    left: 0;
-}
-
-.empresa form input{
-    padding: 2vh;
-    border: none;
-    border-radius: 20px;
-    background-color: #ffffff;
-    color: #1e686c;
-    width: 50vw;
-}
-
-.empresa form input:focus{
-    outline-color: rgb(190, 190, 190);
-}
-
-.empresa form button{
-    border: 1px solid #29787b;
-    border-radius: 20px;
-    background-color: #2f9194;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding: 0.4rem;
-    margin: 2rem;
-    width: 20vw;
-    cursor: pointer;
-    display: block;
-    align-self: center;
-}
-

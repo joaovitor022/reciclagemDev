@@ -5,43 +5,68 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="desciption" content="Projeto PI-Reciclagem">
         <link rel="stylesheet" href="../css/Cadastro.css">
+        <link rel="stylesheet" href="../css/Login.css">
         <link rel="shortcut icon" href="/img/icone-logo1.png" type="image/x-icon">
         <title>Login-Reciclagem</title>
     </head>
         <body>
             <header>
-                <div class="image">
-                    <a href="/pages/index.html"> <img src="/img/icone-logo1.png" alt="Ícone"> </a>
-                </div>
+                <a href="/pages/index.html"><img src="/img/icone-logo1.png" alt="Ícone"> </a>
             </header>
                 <main>
                     <section class="cadastro">
                          <div class="btns">
-                            <button onclick="mostrarUsuario()">Usuário</button>
-                            <button onclick="mostrarEmpresa()">Empresa</button>
+                            <button onclick="mostrarUsuario()" class="btn-usuario">Usuário</button>
+                            <button onclick="mostrarEmpresa()" class="btn-empresa">Empresa</button>
                         </div>
                             <div class="usuario">
                                    <h2>Cadastro</h2>
                                 <form action="" method="post">
-                                    <input type="text" placeholder="Seu nome completo" required>
-                                    <input type="Email" placeholder="Email" required>
-                                    <input type="Cep" placeholder="Cep" required>
-                                    <input type="password" placeholder="Senha" required>
-                                    <input type="password" placeholder="Confirmar Senha" required>
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" placeholder="Seu nome completo" id="nome" name="nome" required>
+
+                                    <label for="email">E-mail:</label>
+                                    <input type="Email" placeholder="Email" id="email" name="email" required>
+
+                                    <label for="cep">CEP:</label>
+                                    <input type="text" placeholder="CEP" id="cep" name="cep" required>
+
+                                    <label for="senha">Senha:</label>
+                                    <input type="password" placeholder="Senha" id="senha" name="senha" required>
+
+                                    <label for="confirma_senha">Confirmar senha:</label>
+                                    <input type="password" placeholder="Confirmar senha" id="confima_senha" name="confirma_senha" required>
                                 </form>
-                            </div>   <br>
+                                <div class="registro">
+                                    <p>Já possui login?</p>
+                                    <a href="../pages/Login.html"><button type="button">Entrar</button></a>
+                                </div>
+                            </div>
                                 <div class="empresa">
                                     <h2>Cadastro</h2>
                                     <form action="" method="post">
-                                        <input type="Empresa" placeholder="Empresa" required>
-                                        <input type="Email" placeholder="Email" required>
-                                        <input type="Cnpj" placeholder="Cnpj" required>
-                                        <input type="Cep" placeholder="Cep" required>
-                                        <input type="Id Empresa" placeholder="Id empresa" required>
-                                        <input type="Id funcionario " placeholder="Id funcionario" required>
-                                        <input type="password" placeholder="Senha" required>
-                                        <input type="password" placeholder="Confirmar Senha" required>
+                                        <label for="nome_da_empresa">Nome da empresa:</label>
+                                        <input type="text" placeholder="Nome da empresa" id="nome_da_empresa" name="nome_da_empresa" required>
+
+                                        <label for="CNPJ">CNPJ:</label>
+                                        <input type="text" placeholder="CNPJ" id="CNPJ" name="CNPJ" required>
+
+                                        <label for="email">E-mail:</label>
+                                        <input type="Email" placeholder="Email" id="email" name="email" required>
+    
+                                        <label for="cep">CEP:</label>
+                                        <input type="text" placeholder="CEP" id="cep" name="cep" required>
+
+                                        <label for="senha">Senha:</label>
+                                        <input type="password" placeholder="Senha" id="senha" name="senha" required>
+    
+                                        <label for="confirma_senha">Confirmar senha:</label>
+                                        <input type="password" placeholder="Confirmar senha" id="confima_senha" name="confirma_senha" required>
                                     </form>
+                                    <div class="registro">
+                                        <p>Já possui login?</p>
+                                        <a href="../pages/Login.html"><button type="button">Entrar</button></a>
+                                    </div>
                                 </div>
                     </section>   
                 </main>
