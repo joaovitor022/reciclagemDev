@@ -1,0 +1,83 @@
+.texts {
+    margin: 50px 200px 0 100px;
+}
+
+.texts h2 {
+    font-weight: bold;
+}
+
+#eletronic span {
+    color: #804e47;
+}
+
+#recyclable span {
+    color: #008b4e;
+}
+
+.azul {
+    color: blue;
+    font-weight: bold;
+}
+
+.vermelho {
+    color: red;
+    font-weight: bold;
+}
+
+.verde {
+    color: green;
+    font-weight: bold;
+}
+
+.amarelo {
+    color: rgb(239, 205, 16);
+    font-weight: bold;
+}
+
+#organic span {
+    color: #57251e;
+}
+
+.primeiro-paragrafo {
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.texts p {
+    text-align: justify;
+}
+
+section {
+    margin: 25px 0;
+}
+
+.eletronico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reciclavel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.img-eletronico {
+    width: 350px;
+}
+
+.img-reciclavel {
+    width: 800px;
+}
+
+.img-organico {
+    width: 350px;
+}
