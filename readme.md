@@ -39,4 +39,3 @@ Página pessoal do usuário empresa
 
 
 Banco de dados
-![Imagem design página pessoal do usuário empresa](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Pagina_Empresa.png)
