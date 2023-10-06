@@ -39,4 +39,4 @@ Página pessoal do usuário empresa
 
 
 Banco de dados
-![Logo do R](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Atualiza%C3%A7%C3%A3o_BD_ProjetoReciclagem_06_10_2023_Julio_Limeira_Jacob.png)
+![Imagem do Banco de dados](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Atualiza%C3%A7%C3%A3o_BD_ProjetoReciclagem_06_10_2023_Julio_Limeira_Jacob.png)
