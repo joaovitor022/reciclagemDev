@@ -39,4 +39,3 @@ Página pessoal do usuário empresa
 
 
 Banco de dados
-Imagens/README/Atualização_BD_ProjetoReciclagem_06_10_2023_Julio_Limeira_Jacob.png
