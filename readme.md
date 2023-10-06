@@ -39,4 +39,3 @@ Página pessoal do usuário empresa
 
 
 Banco de dados
-https://github.com/joaovitor022/reciclagemDev/commit/8389598b1c677d4bfa30b5388fd248041199685c
