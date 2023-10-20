@@ -43,4 +43,4 @@ Banco de dados
 
 Banco de dados v1.1
 ![Imagem do Banco de Dados v1.1]
-(https://github.com/joaovitor022/reciclagemDev/blob/main/Atualiza%C3%A7%C3%A3o_BD_ProjetoReciclagem_v1.1_20_10_2023_Julio_Limeira_Jacob.png).
+(https://github.com/joaovitor022/reciclagemDev/blob/main/Atualiza%C3%A7%C3%A3o_BD_ProjetoReciclagem_v1.1_20_10_2023_Julio_Limeira_Jacob.png?raw=true).
