@@ -4,10 +4,10 @@
   <groupId>br.com.reciclagemDev</groupId>
   <artifactId>reciclagemDev</artifactId>
   <packaging>war</packaging>
-  <properties>
+  <!--<properties>
     <maven.compiler.source>20</maven.compiler.source>
     <maven.compiler.target>20</maven.compiler.target>
-  </properties>
+  </properties>-->
   <version>1.0-SNAPSHOT</version>
   <name>reciclagemDev Maven Webapp</name>
   <url>http://maven.apache.org</url>
@@ -30,6 +30,12 @@
       <groupId>javax.servlet</groupId>
       <artifactId>jstl</artifactId>
       <version>1.2</version>
+    </dependency>
+
+    <dependency>
+      <groupId>com.h2database</groupId>
+      <artifactId>h2</artifactId>
+      <version>2.1.214</version>
     </dependency>
   </dependencies>
   <build>
@@ -66,4 +72,3 @@
     </plugins>
   </build>
 </project>
-
