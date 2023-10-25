@@ -3,3 +3,4 @@
 0:0:0:0:0:0:0:1 - - [25/Oct/2023:11:50:30 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-7 76
 0:0:0:0:0:0:0:1 - - [25/Oct/2023:11:50:39 -0300] "GET /console HTTP/1.1" 404 965 http-bio-8080-exec-9 5
 0:0:0:0:0:0:0:1 - - [25/Oct/2023:11:52:43 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-3 314
+0:0:0:0:0:0:0:1 - - [25/Oct/2023:12:24:52 -0300] "GET /favicon.ico HTTP/1.1" 404 973 http-bio-8080-exec-1 102
