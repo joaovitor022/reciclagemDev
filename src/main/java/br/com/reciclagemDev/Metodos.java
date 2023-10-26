@@ -3,10 +3,16 @@ import java.util.*;
 public class Metodos{
 HashMap<String, String> conta = new HashMap<>();
 
-public boolean adicionarConta(String e_mail, String senha){
+public boolean isEmpty(){
+return this.conta.isEmpty();
+}
+
+public void cadastroPessoa(Cliente usuarioComum){
 this.conta.put(e_mail, senha);  
-System.out.println("conta cadastrada");
-return false;
+System.out.println("conta cadastrada"); 
+}
+
+public void cadastroEmpresa(){
   
 }
 
@@ -22,6 +28,7 @@ boolean verif = false;
       }
     }  
     else{
+    try{
     System.out.println("e_mail ou senha inválido, tente novamente");
     System.out.println("e_mail: ");
     e_mail = input.next();
@@ -29,9 +36,14 @@ boolean verif = false;
     senha = input.next();
     verif = false;
     }
+    catch(Exception e){
+    input.next();  
+    }
+    }
   }
   return true;
 }
+
 
 
   
