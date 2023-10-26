@@ -13,7 +13,7 @@ public class CreatePostServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String material = req.getParameter("material");
-        Double peso = req.getParameter("peso");
+        String peso = req.getParameter("peso");
         String descricao = req.getParameter("descricao");
 
         System.out.println(material);
