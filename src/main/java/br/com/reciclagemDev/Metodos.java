@@ -8,7 +8,7 @@ return this.conta.isEmpty();
 }
 
 public void cadastroPessoa(Cliente usuarioComum){
-this.conta.put(usuarioComum.getE_mail(), usuarioComum.getSenha());  
+this.conta.put(usuarioComum.getEmail(), usuarioComum.getSenha());  
 System.out.println("conta cadastrada"); 
 }
 
@@ -16,22 +16,22 @@ public void cadastroEmpresa(){
   
 }
 
-public boolean verificarLogin(String e_mail, String senha){
+public boolean verificarLogin(String email, String senha){
 Scanner input = new Scanner(System.in);
   
 boolean verif = false;
   
   while(verif != true){
-    if(this.conta.containsKey(e_mail)){
-      if(this.conta.get(e_mail).equals(senha)){
+    if(this.conta.containsKey(email)){
+      if(this.conta.get(email).equals(senha)){
       verif = true;
       }
     }  
     else{
     try{
-    System.out.println("e_mail ou senha inválido, tente novamente");
-    System.out.println("e_mail: ");
-    e_mail = input.next();
+    System.out.println("email ou senha inválido, tente novamente");
+    System.out.println("email: ");
+    email = input.next();
     System.out.println("senha: ");
     senha = input.next();
     verif = false;
