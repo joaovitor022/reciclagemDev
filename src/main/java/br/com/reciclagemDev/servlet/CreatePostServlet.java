@@ -12,8 +12,10 @@ import br.com.reciclagemDev.Database;
 
 @WebServlet("/post")
 public class CreatePostServlet extends HttpServlet {
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+
         Database database = new Database();
 
         String material = req.getParameter("material");
@@ -29,6 +31,8 @@ public class CreatePostServlet extends HttpServlet {
         database.insertIntoPost(material, peso, descricao);
         database.disconnect();
 
-        req.getRequestDispatcher("../pages/Usuario.html").forward(req, resp);
+        req.getRequestDispatcher("pages/Usuario.html").forward(req, resp);
+
     }
+    
 }
