@@ -47,7 +47,7 @@
         </section>
 
         <h1>Que tal realizar uma nova reciclagem?</h1>
-        <form action="post" method="post" enctype="multipart/form-data">
+        <form action="/post" method="post"> <!--enctype="multipart/form-data"-->
             <label for="material">Qual o material?</label>
             <select id="material" name="material">
                 <option value="plastico">Plástico</option>
@@ -64,7 +64,7 @@
             <textarea id="descricao" name="descricao" rows="4" maxlength="300" placeholder="Descrição do anúncio (limite de 300 caracteres)"></textarea>
     
             <!--<label for="imagens">Adicionar imagens (png ou jpeg)</label>
-            <input type="file" id="imagens" name="imagens" accept=".png, .jpeg" multiple>->
+            <input type="file" id="imagens" name="imagens" accept=".png, .jpeg" multiple>-->
     
             <input type="submit" value="Enviar Anúncio">
         </form>

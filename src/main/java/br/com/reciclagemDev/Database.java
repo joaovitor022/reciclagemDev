@@ -7,18 +7,18 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class Database {
-
+    
     private String url;
     private String username;
     private String password;
     private Connection connection;
-
+    
     public Database() {
         this.url = "jdbc:h2:~/test";
         this.username = "sa";
         this.password = "sa";
     }
-
+    
     public void connect(){
         try{
             connection = DriverManager.getConnection(url, username, password);
@@ -27,7 +27,7 @@ public class Database {
             e.printStackTrace();
         }
     }
-
+    
     public void disconnect() {
         try {
             if(connection != null) {
@@ -38,7 +38,7 @@ public class Database {
             e.printStackTrace();
         }
     }
-
+    
     public ResultSet executeQuery(String query) {
         ResultSet resultSet = null;
         try {
@@ -49,7 +49,7 @@ public class Database {
         }
         return resultSet;
     }
-
+    
     public void executeUpdate(String query) {
         try {
             Statement statement = connection.createStatement();
@@ -60,10 +60,10 @@ public class Database {
         }
     }
 
-    public void insertIntoPost(String material, int peso, String descricao) {
+    public void insertIntoPost(String material, String peso, String descricao) {
         try {
-            String sql = "INSERT INTO tabela_post (nome, idade) VALUES ('" + material + "', " + peso + ", '" + descricao + "')";
-
+            String sql = "INSERT INTO PRODUTO (MATERIAL, PESO, DESCRICAO) VALUES ('" + material + "', " + peso + ", '" + descricao + "')";
+    
             Statement statement = connection.createStatement();
             int rowsAfetadas = statement.executeUpdate(sql);
             System.out.println(rowsAfetadas + " linhas afetadas");
@@ -72,3 +72,4 @@ public class Database {
         }
     }
 }
+
