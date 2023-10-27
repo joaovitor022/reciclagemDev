@@ -11,6 +11,7 @@ this.nome = nome;
 this.sobrenome = sobrenome;
 this.cpf = cpf;
 
+}
 
 public String getNome(){
 return nome;  
@@ -55,7 +56,7 @@ return endereco;
   }
 
 
-}
+
 
 
 }
