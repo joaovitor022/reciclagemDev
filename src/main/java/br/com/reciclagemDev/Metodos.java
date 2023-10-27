@@ -8,7 +8,7 @@ return this.conta.isEmpty();
 }
 
 public void cadastroPessoa(Cliente usuarioComum){
-this.conta.put(Cliente.getE_mail(), Cliente.getSenha());  
+this.conta.put(usuarioComum.getE_mail(), usuarioComum.getSenha());  
 System.out.println("conta cadastrada"); 
 }
 

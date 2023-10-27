@@ -1,20 +1,20 @@
 public class Contas{
 
-private String e_mail;
+private String email;
 private String senha; 
 private String endereco;
 
-public Contas(String e_mail, String senha, String endereco){
-this.e_mail = e_mail;
+public Contas(String email, String senha, String endereco){
+this.email = email;
 this.senha = senha;
 this.endereco = endereco;
     
   }
-  public String getSE_mail(){
-  return e_mail;  
+  public String getEmail(){
+  return email;  
   }
-   public void setE_mail(String e_mail){
-    this.e_mail = e_mail;  
+   public void setEmail(String email){
+    this.email = email;  
     }
 
   public String getSenha(){

@@ -3,8 +3,8 @@ public class Funcionario extends Contas{
 private int cnpj;
 private String nomeEmpresa;
 
-public Funcionario(int cnpj, String nomeEmpresa, String e_mail, String senha, String endereco){
-super(e_mail, senha, endereco);
+public Funcionario(int cnpj, String nomeEmpresa, String email, String senha, String endereco){
+super(email, senha, endereco);
 
 this.cnpj = cnpj;
 this.nomeEmpresa = nomeEmpresa;

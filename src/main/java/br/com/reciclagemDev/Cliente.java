@@ -4,8 +4,8 @@ private String nome;
 private String sobreNome;
 private int cpf;
 
-public Cliente(String nome, String sobreNome, int cpf, String e_mail, String senha, String endereco){
-super(e_mail, senha, endereco);
+public Cliente(String nome, String sobreNome, int cpf, String email, String senha, String endereco){
+super(email, senha, endereco);
 
 this.nome = nome;
 this.sobreNome = sobreNome;
