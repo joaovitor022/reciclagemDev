@@ -14,11 +14,11 @@ import br.com.reciclagemDev.Post;
 @WebServlet("/showPost")
 public class ShowPostServlet extends HttpServlet {
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         List<Post> posts = new Post().showPosts();
 
         req.setAttribute("posts", posts);
-        req.getRequestDispatcher("../pages/posts.jsp").forward(req, resp);
+        req.getRequestDispatcher("/pages/posts.jsp").forward(req, resp);
     }
 }
