@@ -5,3 +5,50 @@
     font-size: 12px;
     color:#777 ;
 }
+
+.texto {
+    background-color: #f1f1f1;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginem1 {
+    width: 120px;
+    height: 180px;
+    margin: 40px;
+}
+
+.cabe{
+    margin: 188px;
+    margin-top: -160px;
+}
+
+#bell{
+    width: 50px;
+    height: 40px;   
+}
+
+#loginem {
+    width: 90px;
+    height: 80px;
+}
+
+.dadoslogin {
+    padding-left: 90px;
+    margin-top: -30px;
+}
+
+.indi {
+    color: #f1f1f1;
+}
+
+.contribuicao{
+    margin: 600px;
+    margin-top: -300px;
+}
