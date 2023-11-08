@@ -96,6 +96,10 @@ public class Post {
             
             ResultSet resultSet = database.executeQuery(SQL);
 
+            if(resultSet == null){
+                System.err.println("Erro: O ResultSet está nulo. Verifique a consulta SQL.");
+            }
+
             while (resultSet.next()) {
                 Post post = new Post();
                 post.setMaterial(resultSet.getString("MATERIAL"));

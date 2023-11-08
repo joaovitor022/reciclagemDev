@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -51,33 +51,40 @@
 
         </div>
 
+    <c:forEach var="post" items="${posts}">
         <section class="paragrafos">
             <div class="paragrafo center">
-                <div class="texto">
-                    <p class="placeholder-glow ">
-                    <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Nome do
-                        usuário
-                    </h1>
-                    <p class=" dadoslogin"> Dados de endereço </p>
-                    <span class="placeholder col-12"></span>
-                    </p>
+                    <div class="texto">
+                        <p class="placeholder-glow ">
+                        <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Nome do
+                            usuário
+                        </h1>
+                        <p class=" dadoslogin"> Dados de endereço </p>
+                        <span class="placeholder col-12"></span>
+                        </p>
 
-                    <p class="placeholder-wave">
-                        Descrição: Dolor Sit amet,consectetur adipisng eçit.Duis pulvinar, nunut venenatis
-                        condimentum,nisi odio lacinia purus,sit amet fringilla justo nulla ac purus.
-                    <div class="container">
-                        <img src="../Imagens/Empresa/Maquinadelavar.jpg" alt="Imagem Empresa" class="mx-auto d-block">
+                            <p class="placeholder-wave">
+                                Material: ${post.material}
+                            </p>
+                            <p class="placeholder-wave">
+                                Peso: ${post.peso}
+                            </p>
+                            <br>
+                            <p class="placeholder-wave">
+                                Descrição: ${post.descricao}
+                            </p>
+
+                        <br>
+                        <div class="d-grid gap-2 col-6 mx-auto">
+                            <button type="button" class="btn btn-outline-success  indi">Indicar interrese </button>
+                        </div>
+
                     </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-outline-success  indi">Indicar interrese </button>
-                    </div>
-                    </p>
 
                 </div>
-
-            </div>
+            
         </section>
+    </c:forEach>
 
         <div class="buttons">
             <a href="/showPost"><button class="cadastro">Show post</button></a>
