@@ -50,7 +50,9 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
 
         </div>
-
+    <div class="buttons">
+        <a href="/showPost"><button class="cadastro">Mostrar novos posts</button></a>
+    </div>
     <c:forEach var="post" items="${posts}">
         <section class="paragrafos">
             <div class="paragrafo center">
@@ -86,9 +88,6 @@
         </section>
     </c:forEach>
 
-        <div class="buttons">
-            <a href="/showPost"><button class="cadastro">Show post</button></a>
-        </div>
     </main>
     <footer>
         <div class="listas">
