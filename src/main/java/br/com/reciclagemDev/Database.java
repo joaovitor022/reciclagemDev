@@ -71,5 +71,29 @@ public class Database {
             e.printStackTrace();
         }
     }
+
+    public void insertIntoUsuario(String nome, String sobreNome, String cpf, String email, String senha, String endereco) {
+        try {
+            String sql = "INSERT INTO USUARIO (NOME, SOBRENOME, CPF, EMAIL, SENHA, ENDERECO) VALUES ('" + nome + "', '" + sobreNome + "', '" + cpf + "', '" + email + "', '" + senha + "', '" + endereco + "')";
+    
+            Statement statement = connection.createStatement();
+            int rowsAfetadas = statement.executeUpdate(sql);
+            System.out.println(rowsAfetadas + " linhas afetadas");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void insertIntoEmpresa(String cnpj, String nomeEmpresa, String email, String senha, String endereco) {
+        try {
+            String sql = "INSERT INTO EMPRESA (CNPJ, NOMEEMPRESA, EMAIL, SENHA, ENDERECO) VALUES ('" + cnpj + "', '" + nomeEmpresa + "', '" + email + "', '" + senha + "', '" + endereco + "')";
+    
+            Statement statement = connection.createStatement();
+            int rowsAfetadas = statement.executeUpdate(sql);
+            System.out.println(rowsAfetadas + " linhas afetadas");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
 }
 
