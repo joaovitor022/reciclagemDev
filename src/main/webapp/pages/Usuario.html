@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header>   
+    <header>
         <img src="../Imagens/Logo/lixo eletronico about.png"
             alt="Logo simbolo de reciclagem com circuitos eletrônicos">
 
@@ -44,98 +44,60 @@
         <img id="loginem1" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
         <div class="cabe">
             <div class="perfil">
-            <h1>Gabriel Moreno Serignolli</h1>
+            <h1>Nome usuário</h1>
         </div>
             <span class="placeholder w-75"> </span>
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
 
-        </div>  
+        </div>
 
-        <section class="contribuicao">
-            <div class="ultima">
-                <h3>Última contribuição</h3>
-                <p>26/03/2004</p>
-            </div>
-
-            <div class="num-contri">
-                <h3>Contribuição com o meio ambiente</h3>
-                <p>2 contribuções</p>
-            </div>
-        </section>
-
-        <section class="cabecalho">
-           <div class="paragrafo center">
-                <div class="texto">
-                    <p class="placeholder-glow ">
-                    <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Gabriel Moreno Serignolli
-                    </h1>
-                    <p class=" dadoslogin"> Dados de endereço </p>
-                    <span class="placeholder col-12"></span>
-                    </p>
-
-                    <p class="placeholder-wave">
-                        Descrição: Dolor Sit amet,consectetur adipisng eçit.Duis pulvinar, nunut venenatis
-                        condimentum,nisi odio lacinia purus,sit amet fringilla justo nulla ac purus.
-                    <div class="container">
-                        <img src="../Imagens/Empresa/Maquinadelavar.jpg" alt="Imagem Empresa" class="mx-auto d-block">
-                    </div>
-                    <br>
-                    <div class="d-grid gap-2 col-6 mx-auto">
-                        <button type="button" class="btn btn-outline-success  indi">Indicar interrese </button>
-                    </div>
-                    </p>
-
-                </div>
-
-            </div>
-        </section>
-
-       
-
-        <h1>Que tal realizar uma nova reciclagem?</h1>
-        <form action="/post" method="post"> <!--enctype="multipart/form-data"-->
-            <label for="material">Qual o material?</label>
-            <select id="material" name="material">
-                <option value="plastico">Plástico</option>
-                <option value="metal">Metal</option>
-                <option value="papel">Papel</option>
-                <option value="vidro">Vidro</option>
-                <option value="outros">Outros</option>
-            </select>
+        <div class="form">
+            <h1>Que tal realizar uma nova reciclagem?</h1>
+            <form action="/post" method="post"> <!--enctype="multipart/form-data"-->
+                <label for="material">Qual o material?</label>
+                <select id="material" name="material">
+                    <option value="plastico">Plástico</option>
+                    <option value="metal">Metal</option>
+                    <option value="papel">Papel</option>
+                    <option value="vidro">Vidro</option>
+                    <option value="outros">Outros</option>
+                </select>
+        
+                <label for="peso">Peso aproximado (Kg)</label>
+                <input type="number" id="peso" name="peso" placeholder="Kg" step="0.01" required>
+        
+                <label for="descricao">Descrição do anúncio</label>
+                <textarea id="descricao" name="descricao" rows="4" maxlength="300" placeholder="Descrição do anúncio (limite de 300 caracteres)"></textarea>
+        
+                <!--<label for="imagens">Adicionar imagens (png ou jpeg)</label>
+                <input type="file" id="imagens" name="imagens" accept=".png, .jpeg" multiple>-->
+        
+                <input type="submit" value="Enviar Anúncio">
+            </form>
+        </div>
+    </main>
     
-            <label for="peso">Peso aproximado (Kg)</label>
-            <input type="number" id="peso" name="peso" placeholder="Kg" step="0.01" required>
-    
-            <label for="descricao">Descrição do anúncio</label>
-            <textarea id="descricao" name="descricao" rows="4" maxlength="300" placeholder="Descrição do anúncio (limite de 300 caracteres)"></textarea>
-    
-            <!--<label for="imagens">Adicionar imagens (png ou jpeg)</label>
-            <input type="file" id="imagens" name="imagens" accept=".png, .jpeg" multiple>-->
-    
-            <input type="submit" value="Enviar Anúncio">
-        </form>
-    </main> 
     <footer>
         <div class="listas">
             <ul>
-                <p>Lista 1</p>  
+                <p>Lista 1</p>
                 <a href=""> <li>item 1</li> </a>
                 <a href=""><li>item 2</li> </a>
                 <a href=""><li>item 3</li></a>
             </ul>
     
             <ul>
-                <p>Lista 2</p>  
+                <p>Lista 2</p>
                 <a href=""> <li>item 1</li> </a>
                 <a href=""><li>item 2</li> </a>
                 <a href=""><li>item 3</li></a>
             </ul>
     
             <ul>
-                <p>Lista 3</p>  
+                <p>Lista 3</p>
                 <a href=""> <li>item 1</li> </a>
                 <a href=""><li>item 2</li> </a>
-                <a href=""><li>item 3</li></a>    
+                <a href=""><li>item 3</li></a>
             </ul>
         </div>
     </footer>

@@ -1,5 +1,5 @@
 .direitos{
-    background: color #f2f2f2; 
+    background: color #f2f2f2;
     padding: 10px;
     text-align: center;
     font-size: 12px;
@@ -31,7 +31,7 @@
 
 #bell{
     width: 50px;
-    height: 40px;   
+    height: 40px;
 }
 
 #loginem {
@@ -51,4 +51,40 @@
 .contribuicao{
     margin: 600px;
     margin-top: -300px;
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    margin: 10vh auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+select, input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #38b6ff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
