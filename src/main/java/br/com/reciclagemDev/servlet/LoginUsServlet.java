@@ -1,7 +1,5 @@
-/*package br.com.reciclagemDev.servlet;
-
-import br.com.reciclagemDev.dao.UserDao;
-
+import br.com.reciclagemDev.UserDAO;
+import br.com.reciclagemDev.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,7 +7,7 @@ import javax.servlet.http.*;
 import java.io.IOException;
 
 @WebServlet("/login")
-public class LoginServlet extends HttpServlet {
+public class LoginUsServlet extends HttpServlet {
     
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -21,22 +19,22 @@ public class LoginServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        String username = req.getParameter("username");
-        String password = req.getParameter("password");
+        String email = req.getParameter("email");
+        String senha = req.getParameter("senha");
 
-        User user = new User(username, password);
+        User user = new User(email, senha);
 
         boolean isValidUser = new UserDao().verifyCredentials(user);
 
         if (isValidUser) {
 
-            req.getSession().setAttribute("loggedUser", username);
+            req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("find-all-cars");
+            resp.sendRedirect("Usuario.html");
 
         } else {
 
-            req.setAttribute("message", "Invalid credentials!");
+            req.setAttribute("message", "Login inválido");
 
             req.getRequestDispatcher("login.jsp").forward(req, resp);
 

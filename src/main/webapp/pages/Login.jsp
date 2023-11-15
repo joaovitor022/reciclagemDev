@@ -20,6 +20,8 @@
                 </div>
             </header>
                     <main>
+                        <div class="message">${requestScope.message}</div>
+
                         <section class="tela-login">
                             <div class="btns">
                                 <button onclick="mostrarUsuario()" class="btn-usuario">Usuário</button>
@@ -27,7 +29,7 @@
                             </div>
                                 <div class="usuario">
                                     <h2>Login</h2>
-                                    <form action="" method="post">
+                                    <form action="/loginUs" method="post">
                                         <label for="usuario">Usuário:</label>
                                         <input type="text" id="usuario" name="usuario" required>
                                     
@@ -43,7 +45,7 @@
                                 </div>
                                 <div class="empresa">
                                     <h2>Login</h2>
-                                    <form action="" method="post">
+                                    <form action="/login" method="post">
                                         <label for="usuario">Usuário:</label>
                                         <input type="text" id="usuario" name="usuario" required>
                                     

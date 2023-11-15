@@ -38,9 +38,11 @@
         </ul>
 
 
-        <div class="buttons">
-            <a href="../index.html"><button class="cadastro">Sair</button></a>
-        </div>
+        <form action="/logout">
+            <div class="buttons">
+                <button class="cadastro">Sair</button>
+            </div>
+        </form>
     </header>
     <main>
         <img id="loginem1" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
