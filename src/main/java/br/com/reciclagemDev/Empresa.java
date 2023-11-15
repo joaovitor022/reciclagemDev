@@ -18,7 +18,7 @@ public class Empresa {
 
     public String getNomeEmpresa() {
         database.connect();
-        String query = "SELECT NOME FROM USUARIO";
+        String query = "SELECT NOMEEMPRESA FROM EMPRESA";
         String nomeEmpresa = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -36,14 +36,14 @@ public class Empresa {
 
     public void setNomeEmpresa(String nomeEmpresa) {
         database.connect();
-        String query = "UPDATE USUARIO SET NOME = '" + nomeEmpresa + "'";
+        String query = "UPDATE EMPRESA SET NOMEEMPRESA = '" + nomeEmpresa + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
        public String getCNPJ() {
         database.connect();
-        String query = "SELECT CNPJ FROM USUARIO";
+        String query = "SELECT CNPJ FROM EMPRESA";
         String cnpj = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -61,14 +61,14 @@ public class Empresa {
 
     public void setCNPJ(String cnpj) {
         database.connect();
-        String query = "UPDATE USUARIO SET CNPJ = '" + cnpj + "'";
+        String query = "UPDATE EMPRESA SET CNPJ = '" + cnpj + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public String getEmail() {
         database.connect();
-        String query = "SELECT EMAIL FROM USUARIO";
+        String query = "SELECT EMAIL FROM EMPRESA";
         String email = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -86,14 +86,14 @@ public class Empresa {
 
     public void setEmail(String email) {
         database.connect();
-        String query = "UPDATE USUARIO SET EMAIL = '" + email + "'";
+        String query = "UPDATE EMPRESA SET EMAIL = '" + email + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public String getSenha() {
         database.connect();
-        String query = "SELECT SENHA FROM USUARIO";
+        String query = "SELECT SENHA FROM EMPRESA";
         String senha = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -111,14 +111,14 @@ public class Empresa {
 
     public void setSenha(String senha) {
         database.connect();
-        String query = "UPDATE USUARIO SET SENHA = '" + senha + "'";
+        String query = "UPDATE EMPRESA SET SENHA = '" + senha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public String getEndereco() {
         database.connect();
-        String query = "SELECT ENDERECO FROM USUARIO";
+        String query = "SELECT ENDERECO FROM EMPRESA";
         String endereco = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -136,7 +136,7 @@ public class Empresa {
 
     public void setEndereco(String endereco) {
         database.connect();
-        String query = "UPDATE USUARIO SET ENDERECO = '" + endereco + "'";
+        String query = "UPDATE EMPRESA SET ENDERECO = '" + endereco + "'";
         database.executeUpdate(query);
         database.disconnect();
     }

@@ -43,6 +43,9 @@
                 <button class="cadastro">Sair</button>
             </div>
         </form>
+        <c:if test="${not empty sessionScope.loggedUser}">
+            <p>Bem-vindo, ${sessionScope.nomeUser}!</p>
+        </c:if>
     </header>
     <main>
         <img id="loginem1" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
