@@ -1,4 +1,4 @@
-import br.com.reciclagemDev.UserDAO;
+import br.com.reciclagemDev.EmpresaDAO;
 import br.com.reciclagemDev.User;
 
 import javax.servlet.ServletException;
@@ -24,13 +24,13 @@ public class LoginEmServlet extends HttpServlet {
 
         User user = new User(email, senha);
 
-        boolean isValidUser = new UserDAO().verifyCredentials(user);
+        boolean isValidUser = new EmpresaDAO().verifyCredentials(user);
 
-        if (isValidUser) {
+        if (isValidUser == true) {
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("pages/Empresa.html");
+            resp.sendRedirect("pages/Empresa.jsp");
 
         } else {
 
