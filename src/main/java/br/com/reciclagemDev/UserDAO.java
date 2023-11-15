@@ -11,7 +11,7 @@ public class UserDAO {
 
         Database database = new Database();
 
-        String SQL = "SELECT EMAIL, SENHA FROM USUARIO WHERE EMAIL = '" + user.getUsername() + "'";
+        String SQL = "SELECT EMAIL, SENHA FROM USUARIO WHERE EMAIL = '" + user.getEmail() + "'";
 
         try {
 

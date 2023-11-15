@@ -24,7 +24,7 @@ public class LoginEmServlet extends HttpServlet {
 
         User user = new User(email, senha);
 
-        boolean isValidUser = new UserDao().verifyCredentials(user);
+        boolean isValidUser = new UserDAO().verifyCredentials(user);
 
         if (isValidUser) {
 

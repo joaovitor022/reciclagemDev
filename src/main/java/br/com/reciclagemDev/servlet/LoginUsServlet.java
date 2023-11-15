@@ -6,7 +6,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 import java.io.IOException;
 
-@WebServlet("/login")
+@WebServlet("/loginUs")
 public class LoginUsServlet extends HttpServlet {
     
     @Override
@@ -24,7 +24,7 @@ public class LoginUsServlet extends HttpServlet {
 
         User user = new User(email, senha);
 
-        boolean isValidUser = new UserDao().verifyCredentials(user);
+        boolean isValidUser = new UserDAO().verifyCredentials(user);
 
         if (isValidUser) {
 
