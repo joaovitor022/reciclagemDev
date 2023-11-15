@@ -60,6 +60,16 @@ public class Database {
         }
     }
 
+        public void executeDelete(String query) {
+        try {
+            Statement statement = connection.createStatement();
+            int rowsAffected = statement.executeUpdate(query);
+            System.out.println(rowsAffected + " linhas afetadas");
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+    }
+
     public void insertIntoPost(String material, String peso, String descricao) {
         try {
             String sql = "INSERT INTO PRODUTO (MATERIAL, PESO, DESCRICAO) VALUES ('" + material + "', " + peso + ", '" + descricao + "')";

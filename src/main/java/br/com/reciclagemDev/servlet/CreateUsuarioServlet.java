@@ -29,7 +29,7 @@ public class CreateUsuarioServlet extends HttpServlet {
         database.insertIntoUsuario(nome, sobreNome, cpf, email, senha, endereco);
         database.disconnect();
 
-        req.getRequestDispatcher("pages/Usuario.html").forward(req, resp);
+        req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
     }
 

@@ -28,7 +28,7 @@ public class CreateEmpresaServlet extends HttpServlet {
         database.insertIntoEmpresa(cnpj, nomeEmpresa, email, senha, endereco);
         database.disconnect();
 
-        req.getRequestDispatcher("pages/Empresa.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
     }
 

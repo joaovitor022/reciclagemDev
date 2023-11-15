@@ -54,8 +54,13 @@
         </div>
             <span class="placeholder w-75"> </span>
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
-
         </div>
+
+        <form action="/delete-account-us">
+            <div class="button-delete">
+                <button>Deletar conta</button>
+            </div>
+        </form>
 
         <div class="form">
             <h1>Que tal realizar uma nova reciclagem?</h1>
