@@ -44,13 +44,14 @@
             </div>
         </form>
         <c:if test="${not empty sessionScope.loggedUser}">
-            <p>Bem-vindo, ${sessionScope.nomeUser}!</p>
+            <p>Bem-vindo,</p>
+            <p>${sessionScope.nomeUser}</p>
         </c:if>
     </header>
     <main>
         <img id="loginem1" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
         <div class="cabe">
-            <h1>Nome empresa</h1>
+            <h1>${sessionScope.nomeUser}</h1>
             <span class="placeholder w-75"> </span>
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
 

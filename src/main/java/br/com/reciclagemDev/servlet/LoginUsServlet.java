@@ -1,5 +1,6 @@
 import br.com.reciclagemDev.UserDAO;
 import br.com.reciclagemDev.User;
+import br.com.reciclagemDev.Usuario;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -9,6 +10,8 @@ import java.io.IOException;
 @WebServlet("/loginUs")
 public class LoginUsServlet extends HttpServlet {
     
+    Usuario usuario = new Usuario();
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
@@ -21,6 +24,8 @@ public class LoginUsServlet extends HttpServlet {
 
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
+        String nome = usuario.getNome();
+        String sobrenome = usuario.getSobreNome();
 
         User user = new User(email, senha);
 
@@ -29,8 +34,10 @@ public class LoginUsServlet extends HttpServlet {
         if (isValidUser == true) {
 
             req.getSession().setAttribute("loggedUser", email);
+            req.getSession().setAttribute("nomeUser", nome);
+            req.getSession().setAttribute("sobrenomeUser", sobrenome);
 
-            resp.sendRedirect("pages/Usuario.html");
+            resp.sendRedirect("pages/Usuario.jsp");
 
         } else {
 
