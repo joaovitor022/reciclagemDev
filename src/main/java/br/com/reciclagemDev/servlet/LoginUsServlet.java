@@ -12,7 +12,7 @@ public class LoginUsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.getRequestDispatcher("login.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
     }
 
@@ -26,17 +26,17 @@ public class LoginUsServlet extends HttpServlet {
 
         boolean isValidUser = new UserDAO().verifyCredentials(user);
 
-        if (isValidUser) {
+        if (isValidUser == true) {
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("Usuario.html");
+            resp.sendRedirect("pages/Usuario.html");
 
         } else {
 
             req.setAttribute("message", "Login inválido");
 
-            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
         }
 

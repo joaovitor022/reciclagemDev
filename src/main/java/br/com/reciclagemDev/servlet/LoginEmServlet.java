@@ -12,7 +12,7 @@ public class LoginEmServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        req.getRequestDispatcher("login.jsp").forward(req, resp);
+        req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
     }
 
@@ -30,13 +30,13 @@ public class LoginEmServlet extends HttpServlet {
 
             req.getSession().setAttribute("loggedUser", email);
 
-            resp.sendRedirect("Empresa.html");
+            resp.sendRedirect("pages/Empresa.html");
 
         } else {
 
             req.setAttribute("message", "Login inválido");
 
-            req.getRequestDispatcher("login.jsp").forward(req, resp);
+            req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
 
         }
 

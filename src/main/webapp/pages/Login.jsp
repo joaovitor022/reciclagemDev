@@ -30,8 +30,8 @@
                                 <div class="usuario">
                                     <h2>Login</h2>
                                     <form action="/loginUs" method="post">
-                                        <label for="usuario">Usuário:</label>
-                                        <input type="text" id="usuario" name="usuario" required>
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" required>
                                     
                                         <label for="senha">Senha:</label>
                                         <input type="password" id="senha" name="senha" required>
@@ -45,9 +45,9 @@
                                 </div>
                                 <div class="empresa">
                                     <h2>Login</h2>
-                                    <form action="/login" method="post">
-                                        <label for="usuario">Usuário:</label>
-                                        <input type="text" id="usuario" name="usuario" required>
+                                    <form action="/loginEm" method="post">
+                                        <label for="email">Email:</label>
+                                        <input type="text" id="email" name="email" required>
                                     
                                         <label for="senha">Senha:</label>
                                         <input type="password" id="senha" name="senha" required>
