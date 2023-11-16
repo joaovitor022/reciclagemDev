@@ -76,7 +76,7 @@
                     <button>Deletar conta</button>
                 </div>
             </form>
-            <button><a href="../pages/AtualizarDados.html">Atualizar dados</a></button>
+            <button><a href="../pages/AtualizarDadosUs.html">Atualizar dados</a></button>
         </div>
 
         <div class="form">

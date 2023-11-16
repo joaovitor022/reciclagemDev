@@ -6,6 +6,10 @@
     background-color: transparent;
 }
 
+.empresa{
+    display: block;
+}
+
 .btns{
     margin-bottom: 2rem;
     padding: 0;
@@ -84,12 +88,8 @@
     align-self: center;
 }
 
-.empresa{
-    display: none;
-}
-
 .direitos{
-    background: color #f2f2f2; 
+    background: color #f2f2f2;
     padding: 10px;
     text-align: center;
     font-size: 12px;

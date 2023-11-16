@@ -21,10 +21,7 @@
                 <main>
                     <section class="atualizar">
                         <button><a href="javascript:history.back()">Voltar</a></button>
-                        <div class="btns">
-                            <button onclick="mostrarUsuario()" class="btn-usuario">Usuário</button>
-                            <button onclick="mostrarEmpresa()" class="btn-empresa">Empresa</button>
-                        </div>
+
                             <div class="usuario">
                                 <h2>Atualização de dados</h2>
                                 <form action="/Att-Usuario" method="post">
@@ -50,34 +47,10 @@
                                     
                                 </form>
  
-                            </div>
-                                <div class="empresa">
-                                    <h2>Atualização de dados</h2>
-                                    <form action="/Att-Empresa" method="post">
-                                        <label for="nomeEmpresa">Nome da empresa:</label>
-                                        <input type="text" placeholder="Nome da empresa" id="nomeEmpresa" name="nomeEmpresa">
-
-                                        <label for="cnpj">CNPJ:</label>
-                                        <input type="text" placeholder="CNPJ" id="cnpj" name="cnpj">
-
-                                        <label for="endereco">Endereço:</label>
-                                        <input type="text" placeholder="Endereço" id="endereco" name="endereco">
-
-                                        <label for="email">E-mail:</label>
-                                        <input type="Email" placeholder="Email" id="email" name="email">
-    
-                                        <label for="senha">Senha:</label>
-                                        <input type="password" placeholder="Senha" id="senha" name="senha">
-
-                                        <button type="submit">Atualizar</button>
-                                    </form>
-
-                                </div>
                     </section>
                 </main>
                     <div class="direitos">
                         <p>&copy;2023 ReciclaDev. todos os direitos reservados.</p>
                     </div>
-            <script src="../js/front.js"></script>
         </body>
 </html>
