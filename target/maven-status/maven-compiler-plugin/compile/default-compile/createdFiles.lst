@@ -8,6 +8,7 @@ br\com\reciclagemDev\servlet\CreateEmpresaServlet.class
 LoginEmServlet.class
 br\com\reciclagemDev\EmpresaDAO.class
 LoginUsServlet.class
+br\com\reciclagemDev\servlet\DeleteAccountEmServlet.class
 br\com\reciclagemDev\servlet\CreatePostServlet.class
 br\com\reciclagemDev\servlet\ShowPostServlet.class
 br\com\reciclagemDev\Empresa.class

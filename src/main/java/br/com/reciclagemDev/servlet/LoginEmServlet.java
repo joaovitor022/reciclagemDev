@@ -33,6 +33,7 @@ public class LoginEmServlet extends HttpServlet {
         if (isValidUser == true) {
 
             req.getSession().setAttribute("loggedUser", email);
+            req.getSession().setAttribute("loggedUserPass", senha);
             req.getSession().setAttribute("nomeUser", nome);
 
             resp.sendRedirect("pages/Empresa.jsp");

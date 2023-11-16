@@ -56,7 +56,7 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
         </div>
 
-        <form action="/delete-account-us">
+        <form action="/delete-account-us" method="post">
             <div class="button-delete">
                 <button>Deletar conta</button>
             </div>

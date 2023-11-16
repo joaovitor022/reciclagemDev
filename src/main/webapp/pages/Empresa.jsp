@@ -56,43 +56,50 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
 
         </div>
-    <div class="buttons">
-        <a href="/showPost"><button class="cadastro">Mostrar novos posts</button></a>
-    </div>
-    <c:forEach var="post" items="${posts}">
-        <section class="paragrafos">
-            <div class="paragrafo center">
-                    <div class="texto">
-                        <p class="placeholder-glow ">
-                        <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Nome do
-                            usuário
-                        </h1>
-                        <p class=" dadoslogin"> Dados de endereço </p>
-                        <span class="placeholder col-12"></span>
-                        </p>
 
-                            <p class="placeholder-wave">
-                                Material: ${post.material}
+        <form action="/delete-account-em" method="post">
+            <div class="button-delete">
+                <button>Deletar conta</button>
+            </div>
+        </form>
+
+        <div class="buttons">
+            <a href="/showPost"><button class="cadastro">Mostrar novos posts</button></a>
+        </div>
+        <c:forEach var="post" items="${posts}">
+            <section class="paragrafos">
+                <div class="paragrafo center">
+                        <div class="texto">
+                            <p class="placeholder-glow ">
+                            <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Nome do
+                                usuário
+                            </h1>
+                            <p class=" dadoslogin"> Dados de endereço </p>
+                            <span class="placeholder col-12"></span>
                             </p>
-                            <p class="placeholder-wave">
-                                Peso: ${post.peso}
-                            </p>
+
+                                <p class="placeholder-wave">
+                                    Material: ${post.material}
+                                </p>
+                                <p class="placeholder-wave">
+                                    Peso: ${post.peso}
+                                </p>
+                                <br>
+                                <p class="placeholder-wave">
+                                    Descrição: ${post.descricao}
+                                </p>
+
                             <br>
-                            <p class="placeholder-wave">
-                                Descrição: ${post.descricao}
-                            </p>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button type="button" class="btn btn-outline-success  indi">Indicar interrese </button>
+                            </div>
 
-                        <br>
-                        <div class="d-grid gap-2 col-6 mx-auto">
-                            <button type="button" class="btn btn-outline-success  indi">Indicar interrese </button>
                         </div>
 
                     </div>
-
-                </div>
-            
-        </section>
-    </c:forEach>
+                
+            </section>
+        </c:forEach>
 
     </main>
     <footer>

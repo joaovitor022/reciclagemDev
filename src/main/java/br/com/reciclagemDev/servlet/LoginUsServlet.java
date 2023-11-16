@@ -34,6 +34,7 @@ public class LoginUsServlet extends HttpServlet {
         if (isValidUser == true) {
 
             req.getSession().setAttribute("loggedUser", email);
+            req.getSession().setAttribute("loggedUserPass", senha);
             req.getSession().setAttribute("nomeUser", nome);
             req.getSession().setAttribute("sobrenomeUser", sobrenome);
 

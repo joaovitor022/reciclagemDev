@@ -10,8 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import br.com.reciclagemDev.Database;
 
-@WebServlet("/delete-account-us")
-public class DeleteAccountUsServlet extends HttpServlet {
+@WebServlet("/delete-account-em")
+public class DeleteAccountEmServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -22,12 +22,12 @@ public class DeleteAccountUsServlet extends HttpServlet {
         String userSenha = (String) req.getSession().getAttribute("loggedUserPass");
 
         if (userEmail != null && userSenha != null) {
-            String SQL = "DELETE FROM USUARIO WHERE EMAIL = '" + userEmail + "' AND SENHA = '" + userSenha + "'";
+            String SQL = "DELETE FROM EMPRESA WHERE EMAIL = '" + userEmail + "' AND SENHA = '" + userSenha + "'";
 
             database.connect();
             database.executeDelete(SQL);
             database.disconnect();
-            System.out.println("Usuario deletado\nEmail: " + userEmail + "\nSenha: " + userSenha);
+            System.out.println("Empresa deletada\nEmail: " + userEmail + "\nSenha: " + userSenha);
         }
 
         req.getRequestDispatcher("pages/Login.jsp").forward(req, resp);
