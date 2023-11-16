@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="desciption" content="Projeto PI-Reciclagem">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/AtualizarDados.css">
+        <link rel="stylesheet" href="../css/Login.css">
+
+        <link rel="shortcut icon" href="../Imagens/Logo/icone-logo1.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+        <title>Atualização de dados</title>
+    </head>
+        <body>
+            <header>
+                <a href="javascript:history.back()"><img src="../Imagens/Logo/icone-logo1.png"Ícone"> </a>
+            </header>
+                <main>
+                    <section class="atualizar">
+                        <button><a href="javascript:history.back()">Voltar</a></button>
+                        <div class="btns">
+                            <button onclick="mostrarUsuario()" class="btn-usuario">Usuário</button>
+                            <button onclick="mostrarEmpresa()" class="btn-empresa">Empresa</button>
+                        </div>
+                            <div class="usuario">
+                                <h2>Atualização de dados</h2>
+                                <form action="/Att-Usuario" method="post">
+                                    <label for="nome">Nome:</label>
+                                    <input type="text" placeholder="Nome" id="nome" name="nome">
+
+                                    <label for="sobrenome">Sobrenome:</label>
+                                    <input type="text" placeholder="Sobrenome" id="sobrenome" name="sobrenome">
+
+                                    <label for="cpf">CPF:</label>
+                                    <input type="text" placeholder="CPF" id="cpf" name="cpf">
+
+                                    <label for="endereco">Endereço:</label>
+                                    <input type="text" placeholder="Endereço" id="endereco" name="endereco">
+
+                                    <label for="email">E-mail:</label>
+                                    <input type="Email" placeholder="Email" id="email" name="email">
+
+                                    <label for="senha">Senha:</label>
+                                    <input type="password" placeholder="Senha" id="senha" name="senha">
+
+                                    <button type="submit">Atualizar</button>
+                                    
+                                </form>
+ 
+                            </div>
+                                <div class="empresa">
+                                    <h2>Atualização de dados</h2>
+                                    <form action="/Att-Empresa" method="post">
+                                        <label for="nome_da_empresa">Nome da empresa:</label>
+                                        <input type="text" placeholder="Nome da empresa" id="nome_da_empresa" name="nome_da_empresa" required>
+
+                                        <label for="cnpj">CNPJ:</label>
+                                        <input type="text" placeholder="CNPJ" id="cnpj" name="cnpj" required>
+
+                                        <label for="endereco">Endereço:</label>
+                                        <input type="text" placeholder="Endereço" id="endereco" name="endereco" required>
+
+                                        <button type="submit">Atualizar</button>
+                                    </form>
+
+                                </div>
+                    </section>
+                </main>
+                    <div class="direitos">
+                        <p>&copy;2023 ReciclaDev. todos os direitos reservados.</p>
+                    </div>
+            <script src="../js/front.js"></script>
+        </body>
+</html>

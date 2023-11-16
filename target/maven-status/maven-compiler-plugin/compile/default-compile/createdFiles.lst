@@ -14,4 +14,5 @@ br\com\reciclagemDev\servlet\ShowPostServlet.class
 br\com\reciclagemDev\Empresa.class
 br\com\reciclagemDev\servlet\DeleteAccountUsServlet.class
 br\com\reciclagemDev\UserDAO.class
+br\com\reciclagemDev\servlet\AttDataUsServlet.class
 br\com\reciclagemDev\User.class

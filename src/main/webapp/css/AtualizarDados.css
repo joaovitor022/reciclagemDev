@@ -1,0 +1,97 @@
+.atualizar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+    background-color: transparent;
+}
+
+.btns{
+    margin-bottom: 2rem;
+    padding: 0;
+}
+
+.btns button{
+    padding: 1rem;
+    border: none;
+    background-color: #0db0b8;
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btns .btn-usuario{
+    background-color: #ffffff;
+    color: #0db0b8;
+    border: 2px solid #0db0b8;
+}
+
+.usuario, .empresa{
+    display: flex;
+    flex-direction: column;
+    background-color: #e4f2f4;
+    border-radius: 20px;
+    padding: 2vw;
+    align-items: center;
+    box-shadow: 20px 20px #e8e8e8;
+    margin-bottom: 10vh;
+}
+
+.usuario h2, .empresa h2{
+    color: #0db0b8;
+    font-size: 2rem;
+    margin-bottom: 3vh;
+}
+
+.usuario form, .empresa form{
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario form label, .empresa form label{
+    color: #1e686c;
+    left: 0;
+    margin-top: 0.7rem;
+    margin-bottom: 0.3rem;
+}
+
+.usuario form input, .empresa form input{
+    padding: 2vh;
+    border: none;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #1e686c;
+    width: 50vw;
+}
+
+.usuario form input:focus, .empresas form input:focus{
+    outline-color: rgb(190, 190, 190);
+}
+
+.usuario form button, .empresa form button{
+    border: 1px solid #29787b;
+    border-radius: 20px;
+    background-color: #2f9194;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0.4rem;
+    margin: 2rem;
+    width: 20vw;
+    cursor: pointer;
+    display: block;
+    align-self: center;
+}
+
+.empresa{
+    display: none;
+}
+
+.direitos{
+    background: color #f2f2f2; 
+    padding: 10px;
+    text-align: center;
+    font-size: 12px;
+    color:#777 ;
+}

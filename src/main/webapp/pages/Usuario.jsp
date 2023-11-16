@@ -56,11 +56,32 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
         </div>
 
-        <form action="/delete-account-us" method="post">
-            <div class="button-delete">
-                <button>Deletar conta</button>
-            </div>
-        </form>
+        <table class="dados">
+            <h3>Seus dados</h3>
+            <tbody>
+                <tr>
+                    <td>Nome: ${sessionScope.nomeUser}</td>
+                </tr>
+                <tr>
+                    <td>Sobrenome: ${sessionScope.sobrenomeUser}</td>
+                </tr>
+                <tr>
+                    <td>CPF: ${sessionScope.cpfUser}</td>
+                </tr>
+                <tr>
+                    <td>Endereço: ${sessionScope.enderecoUser}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="altButton">
+            <form action="/delete-account-us" method="post">
+                <div class="button-delete">
+                    <button>Deletar conta</button>
+                </div>
+            </form>
+            <button><a href="../pages/AtualizarDados.html">Atualizar dados</a></button>
+        </div>
 
         <div class="form">
             <h1>Que tal realizar uma nova reciclagem?</h1>

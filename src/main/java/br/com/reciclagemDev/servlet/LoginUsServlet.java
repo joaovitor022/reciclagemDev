@@ -26,6 +26,8 @@ public class LoginUsServlet extends HttpServlet {
         String senha = req.getParameter("senha");
         String nome = usuario.getNome(email, senha);
         String sobrenome = usuario.getSobreNome(email, senha);
+        String cpf = usuario.getCPF(email, senha);
+        String endereco = usuario.getEndereco(email, senha);
 
         User user = new User(email, senha);
 
@@ -37,6 +39,8 @@ public class LoginUsServlet extends HttpServlet {
             req.getSession().setAttribute("loggedUserPass", senha);
             req.getSession().setAttribute("nomeUser", nome);
             req.getSession().setAttribute("sobrenomeUser", sobrenome);
+            req.getSession().setAttribute("cpfUser", cpf);
+            req.getSession().setAttribute("enderecoUser", endereco);
 
             resp.sendRedirect("pages/Usuario.jsp");
 
