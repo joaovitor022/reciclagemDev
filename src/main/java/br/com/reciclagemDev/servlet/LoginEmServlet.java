@@ -24,7 +24,7 @@ public class LoginEmServlet extends HttpServlet {
 
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
-        String nome = empresa.getNomeEmpresa();
+        String nome = empresa.getNomeEmpresa(email, senha);
 
         User user = new User(email, senha);
 

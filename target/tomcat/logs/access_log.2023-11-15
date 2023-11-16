@@ -454,3 +454,7 @@
 0:0:0:0:0:0:0:1 - - [15/Nov/2023:21:15:53 -0300] "POST /console/query.do?jsessionid=b213b6b162f43c18e436dcde0c36f9d7 HTTP/1.1" 200 1246 http-bio-8080-exec-8 8
 0:0:0:0:0:0:0:1 - - [15/Nov/2023:21:15:53 -0300] "GET /console/stylesheet.css HTTP/1.1" 304 - http-bio-8080-exec-8 0
 0:0:0:0:0:0:0:1 - - [15/Nov/2023:21:15:53 -0300] "GET /console/table.js HTTP/1.1" 304 - http-bio-8080-exec-7 0
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:22:49:35 -0300] "GET /index.html HTTP/1.1" 200 5014 http-bio-8080-exec-1 88
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:22:49:35 -0300] "GET /Imagens/Logo/lixo%20eletronico%20about.png HTTP/1.1" 304 - http-bio-8080-exec-3 15
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:22:49:52 -0300] "GET /index.html HTTP/1.1" 304 - http-bio-8080-exec-5 14
+0:0:0:0:0:0:0:1 - - [15/Nov/2023:22:50:08 -0300] "GET /index.html HTTP/1.1" 200 4755 http-bio-8080-exec-8 20

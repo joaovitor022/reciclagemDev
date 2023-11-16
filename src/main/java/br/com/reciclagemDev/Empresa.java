@@ -16,9 +16,9 @@ public class Empresa {
 
     private Database database = new Database();
 
-    public String getNomeEmpresa() {
+    public String getNomeEmpresa(String actEmail, String actSenha) {
         database.connect();
-        String query = "SELECT NOMEEMPRESA FROM EMPRESA";
+        String query = "SELECT NOMEEMPRESA FROM EMPRESA WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         String nomeEmpresa = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -34,16 +34,16 @@ public class Empresa {
         return nomeEmpresa;
     }
 
-    public void setNomeEmpresa(String nomeEmpresa) {
+    public void setNomeEmpresa(String nomeEmpresa, String actEmail, String actSenha) {
         database.connect();
-        String query = "UPDATE EMPRESA SET NOMEEMPRESA = '" + nomeEmpresa + "'";
+        String query = "UPDATE EMPRESA SET NOMEEMPRESA = '" + nomeEmpresa + "' WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
-       public String getCNPJ() {
+       public String getCNPJ(String actEmail, String actSenha) {
         database.connect();
-        String query = "SELECT CNPJ FROM EMPRESA";
+        String query = "SELECT CNPJ FROM EMPRESA WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         String cnpj = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -59,16 +59,16 @@ public class Empresa {
         return cnpj;
     }
 
-    public void setCNPJ(String cnpj) {
+    public void setCNPJ(String cnpj, String actEmail, String actSenha) {
         database.connect();
-        String query = "UPDATE EMPRESA SET CNPJ = '" + cnpj + "'";
+        String query = "UPDATE EMPRESA SET CNPJ = '" + cnpj + "' WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
-    public String getEmail() {
+    public String getEmail(String actEmail, String actSenha) {
         database.connect();
-        String query = "SELECT EMAIL FROM EMPRESA";
+        String query = "SELECT EMAIL FROM EMPRESA WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         String email = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -84,16 +84,16 @@ public class Empresa {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(String email, String actEmail, String actSenha) {
         database.connect();
-        String query = "UPDATE EMPRESA SET EMAIL = '" + email + "'";
+        String query = "UPDATE EMPRESA SET EMAIL = '" + email + "' WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
-    public String getSenha() {
+    public String getSenha(String actEmail, String actSenha) {
         database.connect();
-        String query = "SELECT SENHA FROM EMPRESA";
+        String query = "SELECT SENHA FROM EMPRESA WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         String senha = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -109,16 +109,16 @@ public class Empresa {
         return senha;
     }
 
-    public void setSenha(String senha) {
+    public void setSenha(String senha, String actEmail, String actSenha) {
         database.connect();
-        String query = "UPDATE EMPRESA SET SENHA = '" + senha + "'";
+        String query = "UPDATE EMPRESA SET SENHA = '" + senha + "' WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
-    public String getEndereco() {
+    public String getEndereco(String actEmail, String actSenha) {
         database.connect();
-        String query = "SELECT ENDERECO FROM EMPRESA";
+        String query = "SELECT ENDERECO FROM EMPRESA WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         String endereco = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -134,9 +134,9 @@ public class Empresa {
         return endereco;
     }
 
-    public void setEndereco(String endereco) {
+    public void setEndereco(String endereco, String actEmail, String actSenha) {
         database.connect();
-        String query = "UPDATE EMPRESA SET ENDERECO = '" + endereco + "'";
+        String query = "UPDATE EMPRESA SET ENDERECO = '" + endereco + "' WHERE EMAIL = '" + actEmail + "' AND SENHA = '" + actSenha + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
