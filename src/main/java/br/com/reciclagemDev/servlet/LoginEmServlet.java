@@ -25,6 +25,8 @@ public class LoginEmServlet extends HttpServlet {
         String email = req.getParameter("email");
         String senha = req.getParameter("senha");
         String nome = empresa.getNomeEmpresa(email, senha);
+        String cnpj = empresa.getCNPJ(email, senha);
+        String endereco = empresa.getEndereco(email, senha);
 
         User user = new User(email, senha);
 
@@ -35,6 +37,8 @@ public class LoginEmServlet extends HttpServlet {
             req.getSession().setAttribute("loggedUser", email);
             req.getSession().setAttribute("loggedUserPass", senha);
             req.getSession().setAttribute("nomeUser", nome);
+            req.getSession().setAttribute("cnpjUser", cnpj);
+            req.getSession().setAttribute("enderecoUser", endereco);
 
             resp.sendRedirect("pages/Empresa.jsp");
 

@@ -43,10 +43,6 @@
                 <button class="cadastro">Sair</button>
             </div>
         </form>
-        <c:if test="${not empty sessionScope.loggedUser}">
-            <p>Bem-vindo,</p>
-            <p>${sessionScope.nomeUser}</p>
-        </c:if>
     </header>
     <main>
         <img id="loginem1" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
@@ -54,14 +50,31 @@
             <h1>${sessionScope.nomeUser}</h1>
             <span class="placeholder w-75"> </span>
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
-
         </div>
 
-        <form action="/delete-account-em" method="post">
-            <div class="button-delete">
-                <button>Deletar conta</button>
-            </div>
-        </form>
+        <table class="dados">
+            <h3>Seus dados</h3>
+            <tbody>
+                <tr>
+                    <td>Nome: ${sessionScope.nomeUser}</td>
+                </tr>
+                <tr>
+                    <td>CNPJ: ${sessionScope.cnpjUser}</td>
+                </tr>
+                <tr>
+                    <td>Endereço: ${sessionScope.enderecoUser}</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="altButton">
+            <form action="/delete-account-us" method="post">
+                <div class="button-delete">
+                    <button>Deletar conta</button>
+                </div>
+            </form>
+            <button><a href="../pages/AtualizarDados.html">Atualizar dados</a></button>
+        </div>
 
         <div class="buttons">
             <a href="/showPost"><button class="cadastro">Mostrar novos posts</button></a>

@@ -6,6 +6,7 @@ br\com\reciclagemDev\servlet\CreateUsuarioServlet.class
 br\com\reciclagemDev\Database.class
 br\com\reciclagemDev\servlet\CreateEmpresaServlet.class
 LoginEmServlet.class
+br\com\reciclagemDev\servlet\AttDataEmServlet.class
 br\com\reciclagemDev\EmpresaDAO.class
 LoginUsServlet.class
 br\com\reciclagemDev\servlet\DeleteAccountEmServlet.class
