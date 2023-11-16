@@ -48,3 +48,46 @@
 .indi {
     color: #f1f1f1;
 }
+
+.altButton{
+    display: flex;
+}
+
+.altButton button{
+    padding: 0.5rem;
+    margin: 1rem;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button-delete{
+    border: 2px solid red;
+    background-color: white;
+    color: red;
+}
+
+.button-att{
+    border: 2px solid #38b6ff;
+    background-color: white;
+}
+
+.button-att a{
+    color: #38b6ff;
+    text-decoration: none;
+}
+
+.button-delete:hover{
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+}
+
+.button-att:hover{
+    border: 2px solid white;
+    background-color: #38b6ff;
+}
+
+.button-att a:hover{
+    color: white;
+}

@@ -69,11 +69,9 @@
 
         <div class="altButton">
             <form action="/delete-account-us" method="post">
-                <div class="button-delete">
-                    <button>Deletar conta</button>
-                </div>
+                <button class="button-delete">Deletar conta</button>
             </form>
-            <button><a href="../pages/AtualizarDadosEm.html">Atualizar dados</a></button>
+            <button class="button-att"><a href="../pages/AtualizarDadosEm.html">Atualizar dados</a></button>
         </div>
 
         <div class="buttons">
