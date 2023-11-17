@@ -49,24 +49,24 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
         </div>
 
-        <table class="dados">
-            <h3>Seus dados</h3>
-            <tbody>
-                <tr>
-                    <td>Nome: ${sessionScope.nomeUser}</td>
-                </tr>
-                <tr>
-                    <td>Sobrenome: ${sessionScope.sobrenomeUser}</td>
-                </tr>
-                <tr>
-                    <td>CPF: ${sessionScope.cpfUser}</td>
-                </tr>
-                <tr>
-                    <td>Endereço: ${sessionScope.enderecoUser}</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="dados">
+            <table class="table-dados">
+                <h2>Seus dados</h2>
+                <tbody>
+                    <tr>
+                        <td>Nome: ${sessionScope.nomeUser}</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrenome: ${sessionScope.sobrenomeUser}</td>
+                    </tr>
+                    <tr>
+                        <td>CPF: ${sessionScope.cpfUser}</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço: ${sessionScope.enderecoUser}</td>
+                    </tr>
+                </tbody>
+            </table>
         <div class="altButton">
             <form action="/delete-account-us" method="post">
                 <button class="button-delete">Deletar conta</button>

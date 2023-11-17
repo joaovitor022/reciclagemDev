@@ -49,8 +49,15 @@
     color: #f1f1f1;
 }
 
+.buttons{
+    margin-left: 5vw;
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
 .altButton{
     display: flex;
+    margin-top: 2vh;
 }
 
 .altButton button{
@@ -90,4 +97,23 @@
 
 .button-att a:hover{
     color: white;
+}
+
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+.dados{
+    margin-left: 5vw;
+    font-size: 1.5rem;
+}
+
+.dados h2{
+    font-weight: bold;
+}
+
+.table-dados{
+    margin-left: 1vw;
+}
+
+.table-dados td{
+    border-bottom: 1px solid black;
 }
