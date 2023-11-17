@@ -80,10 +80,10 @@
                 <div class="paragrafo center">
                         <div class="texto">
                             <p class="placeholder-glow ">
-                            <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">Nome do
-                                usuário
+                            <h1><img id="loginem" src="../Imagens/Empresa/Imagemlogin1.svg" alt="Login empresa">
+                                ${post.nome} ${post.sobrenome}
                             </h1>
-                            <p class=" dadoslogin"> Dados de endereço </p>
+                            <p class=" dadoslogin">${post.endereco}</p>
                             <span class="placeholder col-12"></span>
                             </p>
 

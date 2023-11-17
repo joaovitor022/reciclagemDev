@@ -10,12 +10,15 @@ public class Post {
     private String material;
     private String peso;
     private String descricao;
+    private String nome;
+    private String sobrenome;
+    private String endereco;
 
     Database database = new Database();
 
     public String getMaterial() {
         database.connect();
-        String query = "SELECT MATERIAL FROM PRODUTO";
+        String query = "SELECT MATERIAL FROM POST";
         String material = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -33,14 +36,14 @@ public class Post {
 
     public void setMaterial(String material) {
         database.connect();
-        String query = "UPDATE PRODUTO SET MATERIAL = '" + material + "'";
+        String query = "UPDATE POST SET MATERIAL = '" + material + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public String getPeso() {
         database.connect();
-        String query = "SELECT PESO FROM PRODUTO";
+        String query = "SELECT PESO FROM POST";
         String peso = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -58,14 +61,14 @@ public class Post {
 
     public void setPeso(String peso) {
         database.connect();
-        String query = "UPDATE PRODUTO SET PESO = '" + peso + "'";
+        String query = "UPDATE POST SET PESO = '" + peso + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public String getDescricao() {
         database.connect();
-        String query = "SELECT DESCRICAO FROM PRODUTO";
+        String query = "SELECT DESCRICAO FROM POST";
         String descricao = null;
         try {
             ResultSet resultSet = database.executeQuery(query);
@@ -83,14 +86,90 @@ public class Post {
 
     public void setDescricao(String descricao) {
         database.connect();
-        String query = "UPDATE PRODUTO SET DESCRICAO = '" + descricao + "'";
+        String query = "UPDATE POST SET DESCRICAO = '" + descricao + "'";
+        database.executeUpdate(query);
+        database.disconnect();
+    }
+
+        public String getNome() {
+        database.connect();
+        String query = "SELECT NOME FROM POST";
+        String nome = null;
+        try {
+            ResultSet resultSet = database.executeQuery(query);
+            if (resultSet.next()) {
+                nome = resultSet.getString("NOME");
+            }
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            database.disconnect();
+        }
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        database.connect();
+        String query = "UPDATE POST SET NOME = '" + nome + "'";
+        database.executeUpdate(query);
+        database.disconnect();
+    }
+
+    
+        public String getSobrenome() {
+        database.connect();
+        String query = "SELECT SOBRENOME FROM POST";
+        String sobrenome = null;
+        try {
+            ResultSet resultSet = database.executeQuery(query);
+            if (resultSet.next()) {
+                sobrenome = resultSet.getString("SOBRENOME");
+            }
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            database.disconnect();
+        }
+        return sobrenome;
+    }
+
+    public void setSobrenome(String sobrenome) {
+        database.connect();
+        String query = "UPDATE POST SET SOBRENOME = '" + sobrenome + "'";
+        database.executeUpdate(query);
+        database.disconnect();
+    }
+
+            public String getEndereco() {
+        database.connect();
+        String query = "SELECT ENDERECO FROM POST";
+        String endereco = null;
+        try {
+            ResultSet resultSet = database.executeQuery(query);
+            if (resultSet.next()) {
+                endereco = resultSet.getString("ENDERECO");
+            }
+            resultSet.close();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        } finally {
+            database.disconnect();
+        }
+        return endereco;
+    }
+
+    public void setEndereco(String endereco) {
+        database.connect();
+        String query = "UPDATE POST SET ENDERECO = '" + endereco + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
 
     public List<Post> showPosts() {
         database.connect();
-        String SQL = "SELECT MATERIAL, PESO, DESCRICAO FROM PRODUTO";
+        String SQL = "SELECT MATERIAL, PESO, DESCRICAO, NOME, SOBRENOME, ENDERECO FROM POST";
         try {
             List<Post> posts = new ArrayList<>();
             
@@ -105,6 +184,9 @@ public class Post {
                 post.setMaterial(resultSet.getString("MATERIAL"));
                 post.setPeso(resultSet.getString("PESO"));
                 post.setDescricao(resultSet.getString("DESCRICAO"));
+                post.setNome(resultSet.getString("NOME"));
+                post.setSobrenome(resultSet.getString("SOBRENOME"));
+                post.setEndereco(resultSet.getString("ENDERECO"));
     
                 posts.add(post);
             }

@@ -70,9 +70,9 @@ public class Database {
         }
     }
 
-    public void insertIntoPost(String material, String peso, String descricao) {
+    public void insertIntoPost(String material, String peso, String descricao, String nome, String sobrenome, String endereco) {
         try {
-            String sql = "INSERT INTO PRODUTO (MATERIAL, PESO, DESCRICAO) VALUES ('" + material + "', " + peso + ", '" + descricao + "')";
+            String sql = "INSERT INTO POST (MATERIAL, PESO, DESCRICAO, NOME, SOBRENOME, ENDERECO) VALUES ('" + material + "', " + peso + ", '" + descricao + "', '" + nome + "', '" + sobrenome + "', '" + endereco + "')";
     
             Statement statement = connection.createStatement();
             int rowsAfetadas = statement.executeUpdate(sql);
