@@ -30,9 +30,6 @@
             <a href="../pages/Informativo_Lixo.html">
                 <li>Tipos de lixo</li>
             </a>
-            <a href="">
-                <li>Opção 3</li>
-            </a>
         </ul>
 
 
@@ -52,31 +49,29 @@
             <img id="bell" src="../Imagens/Empresa/BEll.svg" alt="Bell">
         </div>
 
-        <table class="dados">
-            <h3>Seus dados</h3>
-            <tbody>
-                <tr>
-                    <td>Nome: ${sessionScope.nomeUser}</td>
-                </tr>
-                <tr>
-                    <td>Sobrenome: ${sessionScope.sobrenomeUser}</td>
-                </tr>
-                <tr>
-                    <td>CPF: ${sessionScope.cpfUser}</td>
-                </tr>
-                <tr>
-                    <td>Endereço: ${sessionScope.enderecoUser}</td>
-                </tr>
-            </tbody>
-        </table>
-
+        <div class="dados">
+            <table class="table-dados">
+                <h2>Seus dados</h2>
+                <tbody>
+                    <tr>
+                        <td>Nome: ${sessionScope.nomeUser}</td>
+                    </tr>
+                    <tr>
+                        <td>Sobrenome: ${sessionScope.sobrenomeUser}</td>
+                    </tr>
+                    <tr>
+                        <td>CPF: ${sessionScope.cpfUser}</td>
+                    </tr>
+                    <tr>
+                        <td>Endereço: ${sessionScope.enderecoUser}</td>
+                    </tr>
+                </tbody>
+            </table>
         <div class="altButton">
             <form action="/delete-account-us" method="post">
-                <div class="button-delete">
-                    <button>Deletar conta</button>
-                </div>
+                <button class="button-delete">Deletar conta</button>
             </form>
-            <button><a href="../pages/AtualizarDadosUs.html">Atualizar dados</a></button>
+            <button class="button-att"><a href="../pages/AtualizarDadosUs.html">Atualizar dados</a></button>
         </div>
 
         <div class="form">
@@ -108,24 +103,39 @@
     <footer>
         <div class="listas">
             <ul>
-                <p>Lista 1</p>
-                <a href=""> <li>item 1</li> </a>
-                <a href=""><li>item 2</li> </a>
-                <a href=""><li>item 3</li></a>
+                Navegação
+                <a href="./index.html">
+                    <li>Home</li>
+                </a>
+                <a href="./pages/Informativo_Lixo.html">
+                    <li>Tipos de lixo</li>
+                </a>
             </ul>
     
             <ul>
-                <p>Lista 2</p>
-                <a href=""> <li>item 1</li> </a>
-                <a href=""><li>item 2</li> </a>
-                <a href=""><li>item 3</li></a>
+                Parceiros
+                <a href="https://www.terracycle.com/pt-BR/#@-14.235004:-51.92528zoom:4">
+                    <li>TerraCycle</li>
+                </a>
+                <a href="https://cempre.org.br/">
+                    <li>Cempre</li>
+                </a>
+                <a href="https://www.reciclarpelobrasil.com.br/">
+                    <li>Reciclar pelo Brasil</li>
+                </a>
             </ul>
     
             <ul>
-                <p>Lista 3</p>
-                <a href=""> <li>item 1</li> </a>
-                <a href=""><li>item 2</li> </a>
-                <a href=""><li>item 3</li></a>
+                Aprenda mais sobre o lixo
+                <a href="https://mundoeducacao.uol.com.br/geografia/o-lixo.htm">
+                    <li>Mundo Educação</li>
+                </a>
+                <a href="https://educador.brasilescola.uol.com.br/estrategias-ensino/sequencia-didatica-sobre-separacao-correta-lixo.htm">
+                    <li>Brasil Escola</li>
+                </a>
+                <a href="https://www.todamateria.com.br/tipos-de-lixo/">
+                    <li>Toda Matéria</li>
+                </a>
             </ul>
         </div>
     </footer>
