@@ -32,9 +32,6 @@
             <a href="../pages/Informativo_Lixo.html">
                 <li>Tipos de lixo</li>
             </a>
-            <a href="">
-                <li>Opção 3</li>
-            </a>
         </ul>
 
 
@@ -116,15 +113,12 @@
     <footer>
         <div class="listas">
             <ul>
-                Lista 1
-                <a href="">
-                    <li>item 1</li>
+                Navegação
+                <a href="./index.html">
+                    <li>Home</li>
                 </a>
-                <a href="">
-                    <li>item 2</li>
-                </a>
-                <a href="">
-                    <li>item 3</li>
+                <a href="./pages/Informativo_Lixo.html">
+                    <li>Tipos de lixo</li>
                 </a>
             </ul>
 
