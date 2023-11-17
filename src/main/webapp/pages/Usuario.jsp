@@ -126,10 +126,16 @@
             </ul>
     
             <ul>
-                <p>Lista 3</p>
-                <a href=""> <li>item 1</li> </a>
-                <a href=""><li>item 2</li> </a>
-                <a href=""><li>item 3</li></a>
+                Aprenda mais sobre o lixo
+                <a href="https://mundoeducacao.uol.com.br/geografia/o-lixo.htm">
+                    <li>Mundo Educação</li>
+                </a>
+                <a href="https://educador.brasilescola.uol.com.br/estrategias-ensino/sequencia-didatica-sobre-separacao-correta-lixo.htm">
+                    <li>Brasil Escola</li>
+                </a>
+                <a href="https://www.todamateria.com.br/tipos-de-lixo/">
+                    <li>Toda Matéria</li>
+                </a>
             </ul>
         </div>
     </footer>
