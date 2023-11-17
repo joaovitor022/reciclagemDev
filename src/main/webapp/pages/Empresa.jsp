@@ -123,15 +123,15 @@
             </ul>
 
             <ul>
-                Lista 2
-                <a href="">
-                    <li>item 1</li>
+                Parceiros
+                <a href="https://www.terracycle.com/pt-BR/#@-14.235004:-51.92528zoom:4">
+                    <li>TerraCycle</li>
                 </a>
-                <a href="">
-                    <li>item 2</li>
+                <a href="https://cempre.org.br/">
+                    <li>Cempre</li>
                 </a>
-                <a href="">
-                    <li>item 3</li>
+                <a href="https://www.reciclarpelobrasil.com.br/">
+                    <li>Reciclar pelo Brasil</li>
                 </a>
             </ul>
 
