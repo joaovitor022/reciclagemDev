@@ -1,18 +1,14 @@
 package br.com.reciclagemDev;
 
+import br.com.reciclagemDev.model.Post;
+
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class Post {
-    private String material;
-    private String peso;
-    private String descricao;
-    private String nome;
-    private String sobrenome;
-    private String endereco;
+public class PostDao {
 
     Database database = new Database();
 
@@ -91,7 +87,7 @@ public class Post {
         database.disconnect();
     }
 
-        public String getNome() {
+    public String getNome() {
         database.connect();
         String query = "SELECT NOME FROM POST";
         String nome = null;
@@ -116,8 +112,8 @@ public class Post {
         database.disconnect();
     }
 
-    
-        public String getSobrenome() {
+
+    public String getSobrenome() {
         database.connect();
         String query = "SELECT SOBRENOME FROM POST";
         String sobrenome = null;
@@ -142,7 +138,7 @@ public class Post {
         database.disconnect();
     }
 
-            public String getEndereco() {
+    public String getEndereco() {
         database.connect();
         String query = "SELECT ENDERECO FROM POST";
         String endereco = null;
@@ -168,27 +164,32 @@ public class Post {
     }
 
     public List<Post> showPosts() {
+
         database.connect();
+
         String SQL = "SELECT MATERIAL, PESO, DESCRICAO, NOME, SOBRENOME, ENDERECO FROM POST";
         try {
             List<Post> posts = new ArrayList<>();
-            
+
             ResultSet resultSet = database.executeQuery(SQL);
 
-            if(resultSet == null){
+            if (resultSet == null) {
                 System.err.println("Erro: O ResultSet está nulo. Verifique a consulta SQL.");
             }
 
             while (resultSet.next()) {
-                Post post = new Post();
-                post.setMaterial(resultSet.getString("MATERIAL"));
-                post.setPeso(resultSet.getString("PESO"));
-                post.setDescricao(resultSet.getString("DESCRICAO"));
-                post.setNome(resultSet.getString("NOME"));
-                post.setSobrenome(resultSet.getString("SOBRENOME"));
-                post.setEndereco(resultSet.getString("ENDERECO"));
-    
+
+                String material = resultSet.getString("MATERIAL");
+                String peso = resultSet.getString("PESO");
+                String description = resultSet.getString("DESCRICAO");
+                String name = resultSet.getString("NOME");
+                String lastName = resultSet.getString("SOBRENOME");
+                String address = resultSet.getString("ENDERECO");
+
+                Post post = new Post(material, peso, description, name, lastName, address);
+
                 posts.add(post);
+
             }
 
             return posts;
@@ -198,6 +199,6 @@ public class Post {
         } finally {
             database.disconnect();
         }
-}
+    }
 
 }
