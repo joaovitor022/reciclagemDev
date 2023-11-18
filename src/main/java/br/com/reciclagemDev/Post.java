@@ -36,7 +36,7 @@ public class Post {
 
     public void setMaterial(String material) {
         database.connect();
-        String query = "UPDATE POST SET MATERIAL = '" + material + "'";
+        String query = "UPDATE POST SET MATERIAL = '" + material + "' WHERE MATERIAL = '" + material + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
@@ -61,7 +61,7 @@ public class Post {
 
     public void setPeso(String peso) {
         database.connect();
-        String query = "UPDATE POST SET PESO = '" + peso + "'";
+        String query = "UPDATE POST SET PESO = '" + peso + "' WHERE PESO = '" + peso + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
@@ -86,7 +86,7 @@ public class Post {
 
     public void setDescricao(String descricao) {
         database.connect();
-        String query = "UPDATE POST SET DESCRICAO = '" + descricao + "'";
+        String query = "UPDATE POST SET DESCRICAO = '" + descricao + "' WHERE DESCRICAO = '" + descricao + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
@@ -111,7 +111,7 @@ public class Post {
 
     public void setNome(String nome) {
         database.connect();
-        String query = "UPDATE POST SET NOME = '" + nome + "'";
+        String query = "UPDATE POST SET NOME = '" + nome + "' WHERE NOME = '" + nome + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
@@ -137,7 +137,7 @@ public class Post {
 
     public void setSobrenome(String sobrenome) {
         database.connect();
-        String query = "UPDATE POST SET SOBRENOME = '" + sobrenome + "'";
+        String query = "UPDATE POST SET SOBRENOME = '" + sobrenome + "' WHERE SOBRENOME = '" + sobrenome + "'";
         database.executeUpdate(query);
         database.disconnect();
     }
@@ -162,7 +162,7 @@ public class Post {
 
     public void setEndereco(String endereco) {
         database.connect();
-        String query = "UPDATE POST SET ENDERECO = '" + endereco + "'";
+        String query = "UPDATE POST SET ENDERECO = '" + endereco + "' WHERE NOME = '" + endereco + "'";
         database.executeUpdate(query);
         database.disconnect();
     }

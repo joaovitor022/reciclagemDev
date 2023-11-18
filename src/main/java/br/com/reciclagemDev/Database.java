@@ -22,7 +22,7 @@ public class Database {
     public void connect(){
         try{
             connection = DriverManager.getConnection(url, username, password);
-            System.out.println("Conectou meu bom");
+            //System.out.println("Conectou meu bom");
         } catch (SQLException e){
             e.printStackTrace();
         }
@@ -32,7 +32,7 @@ public class Database {
         try {
             if(connection != null) {
                 connection.close();
-                System.out.println("Fechou parceiro");
+                //System.out.println("Fechou parceiro");
             }
         } catch (SQLException e){
             e.printStackTrace();

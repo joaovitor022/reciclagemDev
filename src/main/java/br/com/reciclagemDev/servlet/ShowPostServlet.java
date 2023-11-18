@@ -19,6 +19,13 @@ public class ShowPostServlet extends HttpServlet {
         List<Post> posts = new Post().showPosts();
 
         req.setAttribute("posts", posts);
+
+        for(Post post : posts) {
+            
+            System.out.println(post.getDescricao())n ;
+        }
+
         req.getRequestDispatcher("/pages/Empresa.jsp").forward(req, resp);
+
     }
 }
