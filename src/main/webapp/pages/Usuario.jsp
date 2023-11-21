@@ -76,8 +76,8 @@
 
         <div class="form">
             <h1>Que tal realizar uma nova reciclagem?</h1>
-            <form action="/post" method="post"> <!--enctype="multipart/form-data"-->
-                <label for="material">Qual o material?</label>
+            <form action="/post" method="post" class="form1">  <!--enctype="multipart/form-data"-->
+                <label for="material" >Qual o material?</label>
                 <select id="material" name="material">
                     <option value="plastico">Plástico</option>
                     <option value="metal">Metal</option>

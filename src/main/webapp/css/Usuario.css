@@ -143,7 +143,7 @@ select, input, textarea {
 }
 
 input[type="submit"] {
-    background-color: #38b6ff;
+    background-color:  rgb(0, 255, 0);
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -152,4 +152,27 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #0056b3;
+}
+
+.form1{
+    
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 15px;      
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;    
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;  
+        background-color: rgb(41, 185, 125);
+        color: #fff;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;  
 }
