@@ -143,7 +143,7 @@ select, input, textarea {
 }
 
 input[type="submit"] {
-    background-color:  rgb(0, 255, 0);
+    background-color:  #1e686c;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -169,7 +169,7 @@ input[type="submit"]:hover {
         box-sizing: border-box;
         border: 1px solid #ccc;
         border-radius: 4px;  
-        background-color: rgb(41, 185, 125);
+        background-color: #29787b;
         color: #fff;
         padding: 10px 15px;
         border: none;
