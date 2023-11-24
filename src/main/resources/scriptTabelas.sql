@@ -34,6 +34,3 @@ CREATE TABLE POST (
 
 INSERT INTO EMPRESA (CNPJ, NOMEEMPRESA, EMAIL, SENHA, ENDERECO) VALUES ('12345678901234', 'EmpresaTeste', 'empresa@empresa.com', 'empresa', 'Rua da empresa');
 INSERT INTO USUARIO (NOME, SOBRENOME, CPF, EMAIL, SENHA, ENDERECO) VALUES ('Usuario', 'Teste', '12332121321', 'usuario@usuario.com', 'usuario', 'Rua do usuario');
-
-INSERT INTO POST (PESO, DESCRICAO, MATERIAL, NOME, SOBRENOME, ENDERECO) VALUES ('1', 'aaaaaaaaaa', 'Plastico', 'teste1', 'aa', 'Rua do teste');
-INSERT INTO POST (PESO, DESCRICAO, MATERIAL, NOME, SOBRENOME, ENDERECO) VALUES ('2', 'bbbbbbbbbb', 'Metal', 'teste2', 'bb', 'Rua do teste 2');
