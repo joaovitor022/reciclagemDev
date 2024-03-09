@@ -101,6 +101,10 @@ header img{
     align-self: center;
 }
 
+.empresa{
+    display: none;
+}
+
 .registro{
     display: flex;
     align-items: center;

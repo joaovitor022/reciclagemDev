@@ -1,11 +1,16 @@
-import br.com.reciclagemDev.EmpresaDAO;
-import br.com.reciclagemDev.User;
-import br.com.reciclagemDev.Empresa;
+package br.com.reciclagemDev.servlet;
+
+import java.io.IOException;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
-import java.io.IOException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import br.com.reciclagemDev.Empresa;
+import br.com.reciclagemDev.EmpresaDAO;
+import br.com.reciclagemDev.User;
 
 @WebServlet("/loginEm")
 public class LoginEmServlet extends HttpServlet {
