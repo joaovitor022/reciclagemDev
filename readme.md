@@ -1,45 +1,68 @@
-# Projeto PI - Projeto PI
+# Projeto Faculdade - Aplicação Web
 
-### Funcionalidades do Projeto de PI
+## Índice
 
-Funcionalidade 1 = Armazenamento de dados para confirmação de acesso (login).
+- [Sobre](#sobre) 📝
+- [Tecnologias Utilizadas](#tecnologias-utilizadas) 🔧
+- [Como Usar](#como-usar) 🚀
+- [Contribuição](#contribuição) 🤝
+- [Licença](#licença) 📜
 
-Funcionbalidade 2 = Sistema para confirmação/autenticação de usuario.
+## 📝 Sobre
 
-Funcionalidade 3 = Armazenamento de dados referentes a proposta do projeto.
+Este projeto foi desenvolvido como parte de um trabalho acadêmico para a disciplina de Desenvolvimento de Aplicações Web. Trata-se de uma aplicação web completa desenvolvida com HTML, CSS e JavaScript para o front-end e Java utilizando servlets para requisições HTTP no back-end. O Maven foi utilizado para gerenciamento de dependências e construção do projeto, enquanto o banco de dados H2 foi utilizado para armazenamento de dados.
 
-Funcionalidade 4 = Exibição dos dados de interesse referentes a proposta do projeto aos usuarios.
+## 🔧 Tecnologias Utilizadas
 
-Funcionalidade 5 = Possibilidade de exclusão (excluir ou deletar) dos dados armazenados.
+- Front-end:
+  - HTML
+  - CSS
+  - JavaScript
 
-### Design prévio do projeto:
-Tela de cadastro do usuário comum
+- Back-end:
+  - Java
+  - Servlets
 
-![Imagem design cadastro](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Cadastro.png)
+- Gerenciamento de Dependências:
+  - Maven
 
-Tela de cadastro do usuário empresa
+- Banco de Dados:
+  - H2
 
-![Imagem design cadastro de empresa](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Cadastro_Empresa.png)
+## 🚀 Como Usar
 
-Tela de login
+Para executar o projeto localmente, siga estas etapas:
 
-![Imagem design login](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Login.png)
+1. Certifique-se de ter o Maven e o JDK (Java Development Kit) instalados em sua máquina.
 
-Página principal
+2. Clone este repositório em sua máquina local usando o seguinte comando:
+   ```bash
+   git clone https://github.com/seu_usuario/seu_repositorio.git
 
-![Imagem design tela inicial](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Tela_Inicial.png)
+3. Navegue até o diretório do projeto:
+    ```bash
+    cd nome_do_diretorio_do_projeto
 
-Página pessoal do usuário comum
+4. Compile o projeto usando o Maven:
+    ```bash
+    mvn clean package
 
-![Imagem design página pessoal do usuário comum](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Pagina_Usuario.png)
+5. Inicie o servidor Tomcat ou outro servidor de aplicação web que preferir:
 
-Página pessoal do usuário empresa
+6. Acesse a aplicação em seu navegador web usando o seguinte URL:
+    ```bash
+    http://localhost:8080/nome_do_projeto
 
-![Imagem design página pessoal do usuário empresa](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Pagina_Empresa.png)
+## 🤝 Contribuição
 
+Contribuições são bem-vindas! Se você quiser contribuir para este projeto, siga estas etapas:
 
-Banco de dados
-![Imagem do Banco de dados](https://github.com/joaovitor022/reciclagemDev/blob/main/Imagens/README/Atualiza%C3%A7%C3%A3o_BD_ProjetoReciclagem_06_10_2023_Julio_Limeira_Jacob.png)
+1. Faça um fork do projeto
+2. Crie um novo branch (`git checkout -b feature/nova-funcionalidade`)
+3. Faça commit das suas alterações (`git commit -am 'Adiciona nova funcionalidade'`)
+4. Faça push do branch (`git push origin feature/nova-funcionalidade`)
+5. Crie um novo Pull Request
 
-Banco de dados v1.1
-![Imagem do Banco de Dados v1.1](Atualização_BD_ProjetoReciclagem_v1.1_20_10_2023_Julio_Limeira_Jacob.png)
+## 📜 Licença
+
+Este projeto está licenciado sob a Licença [MIT](https://opensource.org/licenses/MIT) - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
