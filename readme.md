@@ -18,10 +18,12 @@ Este projeto foi desenvolvido como parte de um trabalho acadêmico para a discip
   - HTML
   - CSS
   - JavaScript
+  - JSP (JavaServer Pages)
 
 - Back-end:
   - Java
   - Servlets
+  - JSP (JavaServer Pages)
 
 - Gerenciamento de Dependências:
   - Maven
